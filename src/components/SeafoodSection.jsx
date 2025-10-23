@@ -40,7 +40,7 @@ const SeafoodSection = () => {
               style={{ color: "#007A4D" }}
               data-aos="fade-up"
             >
-              <FaFish /> Alino African Restaurant
+              <FaFish /> Daily Fresh Kitchen & Bar
             </p>
 
             <h2
@@ -49,7 +49,7 @@ const SeafoodSection = () => {
               data-aos="fade-up"
               data-aos-delay="150"
             >
-              Authentic Flavors & Soulful Dining
+              Authentic African Flavours & Lively Atmosphere
               <span
                 className="block w-24 h-[3px] mt-2 animate-pulse"
                 style={{ backgroundColor: "#FFB612" }}
@@ -62,7 +62,7 @@ const SeafoodSection = () => {
               data-aos="fade-up"
               data-aos-delay="300"
             >
-             Embark on a flavorful journey with us! Where every dish tells a story, blending rich African traditions with modern culinary passion.
+             Embark on a journey through Africa’s rich culinary heritage! Whether you’re here for vibrant flavours, soulful music, or warm hospitality — every dish is crafted with heart and tradition.
             </p>
 
             {/* Features */}
@@ -74,7 +74,7 @@ const SeafoodSection = () => {
               >
                 <FaUtensils className="text-3xl" style={{ color: "#007A4D" }} />
                 <p className="text-gray-700">
-                  Savor the Spirit of Africa in Every Bite.
+                  Indulge in the True Taste of Africa.
                 </p>
               </div>
               <div
@@ -84,7 +84,7 @@ const SeafoodSection = () => {
               >
                 <GiCrab className="text-3xl" style={{ color: "#FFB612" }} />
                 <p className="text-gray-700">
-                  Experience True Authentic Flavors Crafted with Love.
+                  Experience the Spirit of the Continent on Your Plate.
                 </p>
               </div>
               <div
@@ -94,7 +94,7 @@ const SeafoodSection = () => {
               >
                 <FaStore className="text-3xl" style={{ color: "#007A4D" }} />
                 <p className="text-gray-700">
-                  Taste the Rhythm and Soul of the Continent.
+                  Savor Bold Spices, Rich Aromas & Authentic Recipes.
                 </p>
               </div>
               <div
@@ -104,7 +104,7 @@ const SeafoodSection = () => {
               >
                 <FaFish className="text-3xl" style={{ color: "#FFB612" }} />
                 <p className="text-gray-700">
-                 A Celebration of Culture, Flavor, and Togetherness.
+                 A Celebration of African Culture, Cuisine & Community.
                 </p>
               </div>
             </div>
