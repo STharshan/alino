@@ -71,18 +71,6 @@ const CoverPage = forwardRef((props, ref) => (
       <div className="absolute inset-0 bg-black/30" />
     </div>
 
-    {/* Centered content (your welcome image/logo) */}
-
-    <div className="relative z-10 mt-40 flex flex-col items-center justify-center h-full w-full text-center px-4">
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 0.8, delay: 0.3 }}
-        className="rounded-2xl border border-[#FFB612] mt-20 bg-black/40 px-4 py-2 text-sm text-neutral-700 -mt-50 shadow-sm"
-      >
-        Open today • 11:00 – 22:30
-      </motion.div>
-    </div>
     {/* Bottom-right flip hint */}
     <div className="absolute bottom-4 right-4 text-xs text-white/80 z-10">
       Swipe / drag to flip ➔
