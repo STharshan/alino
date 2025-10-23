@@ -81,7 +81,6 @@ const DelightfulExperience = () => {
                 className="uppercase tracking-widest text-xs mt-2"
                 style={{ color: "#4B5563" }}
               >
-                JOSEFINE HOELLER /{" "}
                 <span style={{ color: "#FFB612" }}>Founder</span>
               </p>
             </div>
