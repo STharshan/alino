@@ -173,7 +173,7 @@ const InfoPage = forwardRef((_, ref) => (
         <div className="rounded-2xl border bg-white/60 p-4" data-aos="fade-left">
           <p className="text-sm font-semibold">Contact</p>
           <p className="text-sm text-neutral-600">+44 7737 098045</p>
-          <p className="text-sm text-neutral-600">alinokam2002@yahoo.fr</p>
+          <p className="text-sm text-neutral-600">alinoltd@gmail.com</p>
         </div>
       </div>
 

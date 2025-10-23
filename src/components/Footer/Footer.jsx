@@ -78,7 +78,7 @@ const Footer = () => {
           </h2>
           <p style={{ color: "#E5E5E5" }}>11 Narborough Rd Leicester LE3 0LE</p>
           <p style={{ color: "#E5E5E5" }}>+44 7737 098045</p>
-          <p style={{ color: "#E5E5E5" }}>alinokam2002@yahoo.fr</p>
+          <p style={{ color: "#E5E5E5" }}>alinoltd@gmail.com</p>
           <div className="flex mt-4 space-x-3">
             <a
               href="https://web.facebook.com/AlinoRestaurantBar/?locale=en_GB&_rdc=1&_rdr#"

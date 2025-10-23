@@ -75,7 +75,7 @@ const DelightfulExperience = () => {
                 className="text-2xl font-bold"
                 style={{ fontFamily: "var(--font-heading)", color: "#007A4D" }}
               >
-                Josefine
+                Alino
               </p>
               <p
                 className="uppercase tracking-widest text-xs mt-2"

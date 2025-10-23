@@ -155,7 +155,7 @@ const ContactUs = () => {
               <strong style={{ color: "#007A4D" }}>Phone:</strong> +44 7737 098045
             </p>
             <p className="mb-3" style={{ color: "#4B5563" }}>
-              <strong style={{ color: "#007A4D" }}>Email:</strong> alinokam2002@yahoo.fr
+              <strong style={{ color: "#007A4D" }}>Email:</strong> alinoltd@gmail.com
             </p>
             <p className="mb-6" style={{ color: "#4B5563" }}>
               <strong style={{ color: "#007A4D" }}>Opening Hours:</strong> Mon-Sun: 10:00 AM - 10:00 PM

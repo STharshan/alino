@@ -54,7 +54,7 @@ const Specialties = () => {
           data-aos="fade-up"
           data-aos-delay="200"
         >
-          Best Specialties
+          Chefs Specialities
         </h2>
 
         {/* Grid Items */}
