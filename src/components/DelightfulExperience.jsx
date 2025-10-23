@@ -15,7 +15,7 @@ const DelightfulExperience = () => {
           {/* Left Image */}
           <div data-aos="fade-right" className="flex justify-center relative group">
             <img
-              src="/images/seafood-cooking.jpg"
+              src="/about1.png"
               alt="Cooking seafood"
               className="rounded-xl shadow-xl w-full h-[400px] object-cover transform transition duration-500 ease-out group-hover:scale-105 group-hover:-translate-y-2 hover:shadow-[0_0_30px_#007A4D] active:shadow-[0_0_30px_#FFB612]"
             />
@@ -90,7 +90,7 @@ const DelightfulExperience = () => {
           {/* Right Image */}
           <div data-aos="fade-left" className="flex justify-center relative group">
             <img
-              src="/images/crabs.jpg"
+              src="/about.jpeg"
               alt="Seafood dish"
               className="rounded-xl shadow-xl w-full h-[400px] object-cover transform transition duration-500 ease-out group-hover:scale-105 group-hover:-translate-y-2 hover:shadow-[0_0_30px_#007A4D] active:shadow-[0_0_30px_#FFB612]"
             />
