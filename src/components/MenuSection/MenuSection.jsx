@@ -42,63 +42,59 @@ const paginateByHeight = (items, maxHeight = 550) => {
 };
 
 // ---------- Shared Page ----------
-const Page = forwardRef(({ children, className }, ref) => (
+const Page = forwardRef(({ children, className = "" }, ref) => (
   <div
     ref={ref}
-    className={
-      "relative h-full w-full bg-neutral-50 shadow-lg overflow-hidden " + (className || "")
-    }
+    className={`relative h-full w-full overflow-hidden rounded-xl shadow-lg ${className}`}
   >
-    <div className="pointer-events-none absolute inset-0 bg-gradient-to-br from-white via-transparent to-neutral-200" />
-    <div className="h-full w-full p-4 sm:p-8">{children}</div>
+    {/* 🔹 Background overlay for all pages */}
+    <div className="absolute inset-0 bg-black/30 z-0 rounded-lg" />
+
+    {/* 🔹 Page content */}
+    <div className="relative z-10 h-full w-full p-4 sm:p-8">{children}</div>
   </div>
 ));
 Page.displayName = "Page";
 
+
 // ---------- Specific Pages ----------
-const CoverPage = forwardRef(({ restaurant, tagline }, ref) => (
-  <Page ref={ref} className="bg-gradient-to-br from-[#007A4D]/10 to-[#FFB612]/10">
-    <div
-      className="flex h-full flex-col items-center justify-center text-center"
-      data-aos="zoom-in"
-    >
-      <motion.h1
-        initial={{ opacity: 0, y: 16 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6 }}
-        className="text-3xl sm:text-5xl font-extrabold tracking-tight"
-        style={{ color: COLORS.green }}
-      >
-        {restaurant}
-      </motion.h1>
-      <motion.p
-        initial={{ opacity: 0, y: 10 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6, delay: 0.1 }}
-        className="mt-3 text-base sm:text-lg text-neutral-600"
-      >
-        {tagline}
-      </motion.p>
+const CoverPage = forwardRef((props, ref) => (
+  <Page ref={ref} className="p-0 relative overflow-hidden">
+    {/* Full background image */}
+    <div className="absolute inset-0">
+      <img
+        src="/menucard.png"
+        alt="Alino Welcome Background"
+        className="w-full h-full object-cover object-center"
+      />
+      {/* Optional soft overlay for better text contrast */}
+      <div className="absolute inset-0 bg-black/30" />
+    </div>
+
+    {/* Centered content (your welcome image/logo) */}
+
+    <div className="relative z-10 mt-40 flex flex-col items-center justify-center h-full w-full text-center px-4">
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ duration: 0.6, delay: 0.2 }}
-        className="mt-6 rounded-2xl border bg-white/70 px-4 py-2 text-sm"
-        style={{ borderColor: COLORS.gold }}
+        transition={{ duration: 0.8, delay: 0.3 }}
+        className="rounded-2xl border border-[#FFB612] mt-20 bg-black/40 px-4 py-2 text-sm text-neutral-700 -mt-50 shadow-sm"
       >
         Open today • 11:00 – 22:30
       </motion.div>
     </div>
-    <div className="absolute bottom-4 right-4 text-xs text-neutral-500">
+    {/* Bottom-right flip hint */}
+    <div className="absolute bottom-4 right-4 text-xs text-white/80 z-10">
       Swipe / drag to flip ➔
     </div>
   </Page>
 ));
 CoverPage.displayName = "CoverPage";
 
+
 const SectionPage = forwardRef(({ title, subtitle, items }, ref) => (
   <Page ref={ref}>
-    <div className="flex h-full flex-col" data-aos="fade-up">
+    <div className="flex h-full flex-col " data-aos="fade-up">
       <div className="mb-3">
         <h2
           className="text-xl sm:text-2xl font-bold tracking-tight"
