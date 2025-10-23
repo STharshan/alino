@@ -25,7 +25,7 @@ const paginateByHeight = (items, maxHeight = 550) => {
     const isSmallScreen = typeof window !== "undefined" && window.innerWidth < 640;
     const baseHeight = isSmallScreen ? 220 : 120;
     const estimatedHeight =
-      baseHeight + (item.description ? Math.min(item.description.length / 4, 100) : 0);
+      baseHeight + (item.description ? Math.min(item.description.length /4, 150) : 0);
 
     if (currentHeight + estimatedHeight > maxHeight && currentPage.length > 0) {
       pages.push(currentPage);
