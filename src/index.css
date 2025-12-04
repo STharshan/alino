@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));  /* <-- add this line */
+
+
+html, body {
+  width: 100%;  
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
