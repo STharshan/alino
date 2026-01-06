@@ -517,5 +517,246 @@
         "rating": "100% (10)"
       }
     ]
-  }
+  },
+  [
+    {
+      "id": "soft-drinks",
+      "title": "Soft Drinks",
+      "items": [
+        {
+          "name": "Ginger Beer Can",
+          "price": "£2"
+        },
+        {
+          "name": "Coca Cola Can",
+          "price": "£2"
+        },
+        {
+          "name": "Diet Coke",
+          "price": "£2"
+        },
+        {
+          "name": "Fanta Can",
+          "price": "£2"
+        },
+        {
+          "name": "Sprite",
+          "price": "£2"
+        },
+        {
+          "name": "7 Up",
+          "price": "£2"
+        },
+        {
+          "name": "Pepsi",
+          "price": "£2"
+        },
+        {
+          "name": "Redbull",
+          "price": "£3"
+        },
+        {
+          "name": "Water",
+          "price": "£2"
+        },
+        {
+          "name": "J2O",
+          "price": "£3"
+        }
+      ]
+    },
+    {
+      "id": "beers",
+      "title": "Beers",
+      "items": [
+        {
+          "name": "Large Heineken",
+          "price": "£6"
+        },
+        {
+          "name": "Small Heineken",
+          "price": "£3"
+        },
+        {
+          "name": "Heineken Can",
+          "price": "£4"
+        },
+        {
+          "name": "Large Stella",
+          "price": "£6"
+        },
+        {
+          "name": "Small Stella",
+          "price": "£3"
+        },
+        {
+          "name": "Stella Can",
+          "price": "£4"
+        },
+        {
+          "name": "Corona",
+          "price": "£4"
+        },
+        {
+          "name": "Large Budweiser",
+          "price": "£6"
+        },
+        {
+          "name": "Small Budweiser",
+          "price": "£3"
+        },
+        {
+          "name": "Smirnoff Ice",
+          "price": "£4"
+        },
+        {
+          "name": "Foster",
+          "price": "£4"
+        },
+        {
+          "name": "Strongbow",
+          "price": "£4"
+        },
+        {
+          "name": "Desperado",
+          "price": "£4"
+        },
+        {
+          "name": "Carling",
+          "price": "£4"
+        },
+        {
+          "name": "Jack Daniel’s Can",
+          "price": "£5"
+        },
+        {
+          "name": "Koppenberg",
+          "price": "£5"
+        },
+        {
+          "name": "Bulmers",
+          "price": "£5"
+        }
+      ]
+    },
+    {
+      "id": "spirit-shots",
+      "title": "Spirit Shots",
+      "subtitle" : "Single - £4 | Double - £8",
+      "items": [
+        {
+          "name": "Courvoisier"
+        },
+        {
+          "name": "Hennessy"
+        },
+        {
+          "name": "Glenfiddich"
+        },
+        {
+          "name": "Black Label"
+        },
+        {
+          "name": "Famous Grouse"
+        },
+        {
+          "name": "Jack Daniels"
+        },
+        {
+          "name": "Captain Morgan Original"
+        }
+      ]
+    },
+    {
+      "id": "vodka",
+      "title": "Vodka",
+      "subtitle": "Single - £4 | Double - £8",
+      "items": [
+        {
+          "name": "Sambuca"
+        },
+        {
+          "name": "Smirnoff"
+        },
+        {
+          "name": "Ciroc"
+        },
+        {
+          "name": "Bacardi"
+        },
+        {
+          "name": "Gordon’s"
+        },
+        {
+          "name": "Grey Goose"
+        },
+        {
+          "name": "Belvedere"
+        },
+        {
+          "name": "Absolut"
+        }
+      ]
+    },
+    {
+      "id": "cream",
+      "title": "Cream",
+      "items": [
+        {
+          "name": "Baileys",
+          "price": "£4"
+        }
+      ]
+    },
+    {
+      "id": "wine",
+      "title": "Wine",
+      "subtitle": "Glass £8 | Bottle £25",
+      "items": [
+        {
+          "name": "Red"
+        },
+        {
+          "name": "White"
+        },
+        {
+          "name": "Rose"
+        }
+      ]
+    },
+    {
+      "id": "african-beers",
+      "title": "African Beers",
+      "items": [
+        {
+          "name": "Trophy",
+          "price": "£8"
+        },
+        {
+          "name": "Star",
+          "price": "£6"
+        },
+        {
+          "name": "Goldberg",
+          "price": "£6"
+        },
+        {
+          "name": "Palm Wine",
+          "price": "£6"
+        },
+        {
+          "name": "Large Guinness",
+          "price": "£10"
+        },
+        {
+          "name": "Small Guinness",
+          "price": "£5"
+        },
+        {
+          "name": "Tusker",
+          "price": "£6"
+        }
+      ]
+    }
+  ]
 ]
