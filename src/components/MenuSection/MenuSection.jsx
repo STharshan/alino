@@ -61,7 +61,7 @@ const CoverPage = forwardRef((props, ref) => (
   <Page ref={ref} className="p-0 relative overflow-hidden">
     <div className="absolute inset-0">
       <img
-        src="/menucard.png"
+        src="/menu-image.png"
         alt="Alino Welcome Background"
         className="w-full h-full object-cover object-center"
       />
