@@ -180,8 +180,7 @@
       {
         "name": "Goat Curry",
         "price": "£14.00",
-        "rating": "87% (115)",
-        "image": "/menu/okra-soup.png"
+        "rating": "87% (115)"
       }
     ]
   },
@@ -356,14 +355,12 @@
       {
         "name": "Veggie Delight or Fried Spinach with Fried Fish",
         "price": "£14.00",
-        "rating": "77% (22)",
-        "image": "/menu/ogbono-soup.png"
+        "rating": "77% (22)"
       },
       {
         "name": "Veggie Delight or Fried Spinach with Assorted Meat",
         "price": "£14.00",
-        "rating": "77% (22)",
-        "image": "/menu/ogbono-soup.png"
+        "rating": "77% (22)"
       }
     ]
   },
