@@ -497,7 +497,6 @@
       }
     ]
   },
-  [
     {
       "id": "soft-drinks",
       "title": "Soft Drinks",
@@ -737,5 +736,4 @@
         }
       ]
     }
-  ]
 ]

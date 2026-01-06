@@ -44,7 +44,7 @@ export default function Navbar() {
               </div>
 
             {/* Desktop Navigation - Hidden on mobile */}
-            <div className="hidden lg:flex items-center space-x-8">
+            {/* <div className="hidden lg:flex items-center space-x-8">
               {menuLinks.slice(0, 3).map((link) => (
                 <a
                   key={link.title}
@@ -56,7 +56,7 @@ export default function Navbar() {
                   {link.title}
                 </a>
               ))}
-            </div>
+            </div> */}
 
             {/* Right Side Actions */}
             <div className="flex items-center space-x-4">
@@ -65,7 +65,7 @@ export default function Navbar() {
                // href="https://www.sevenrooms.com/reservations/varanasibirmingham"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hidden sm:block bg-[#FFB612] hover:bg-amber-700 text-white px-6 py-2.5 rounded-sm text-sm font-medium transition-colors duration-300"
+                className="hidden sm:block bg-[#FFB612] hover:bg-amber-700 text-black px-6 py-2.5 rounded-sm text-sm font-medium transition-colors duration-300"
               >
                 Reservations
               </a>

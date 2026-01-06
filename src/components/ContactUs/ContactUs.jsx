@@ -40,7 +40,7 @@ const ContactUs = () => {
   };
 
   return (
-    <section className="relative py-20 px-6 lg:px-20 overflow-hidden bg-white scroll-m-10 dark:bg-black transition-colors">
+    <section className="relative  py-20 px-6 lg:px-20 overflow-hidden bg-white scroll-m-10 dark:bg-black transition-colors">
       {/* Gradient overlay */}
       <div className="absolute inset-0 pointer-events-none bg-linear-to-r from-[#007A4D]/10 via-transparent to-[#FFB612]/10" />
 

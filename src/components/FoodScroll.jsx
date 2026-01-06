@@ -4,40 +4,76 @@ const FoodGalleryTicker = () => {
   const images = [
     {
       id: 1,
-      src: "https://images.unsplash.com/photo-1585937421612-70a008356fc2?w=500&h=500&fit=crop",
+      src: "1.jpg",
       alt: "Food 1",
       bg: "bg-red-900 dark:bg-red-800"
     },
     {
       id: 2,
-      src: "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=500&h=500&fit=crop",
+      src: "2.jpg",
       alt: "Food 2",
       bg: "bg-red-700 dark:bg-red-600"
     },
     {
       id: 3,
-      src: "https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?w=500&h=500&fit=crop",
+      src: "3.jpg",
       alt: "Food 3",
       bg: "bg-amber-800 dark:bg-amber-700"
     },
     {
       id: 4,
-      src: "https://images.unsplash.com/photo-1583394293214-28ded15ee548?w=500&h=500&fit=crop",
+      src: "4.jpg",
       alt: "Person",
       bg: "bg-stone-700 dark:bg-stone-800"
     },
     {
       id: 5,
-      src: "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=500&h=500&fit=crop",
+      src: "5.jpg",
       alt: "Food 5",
       bg: "bg-green-700 dark:bg-green-800"
     },
     {
       id: 6,
-      src: "https://images.unsplash.com/photo-1598103442097-8b74394b95c6?w=500&h=500&fit=crop",
+      src: "6.jpg",
       alt: "Food 6",
       bg: "bg-green-900 dark:bg-green-900"
-    }
+    },
+    {
+      id: 7,
+      src: "7.jpg",
+      alt: "Food 6",
+      bg: "bg-green-900 dark:bg-green-900"
+    },
+    {
+      id: 8,
+      src: "8.jpg",
+      alt: "Food 6",
+      bg: "bg-green-900 dark:bg-green-900"
+    },
+    {
+      id: 9,
+      src: "9.jpg",
+      alt: "Food 6",
+      bg: "bg-green-900 dark:bg-green-900"
+    },
+    {
+      id: 10,
+      src: "10.jpg",
+      alt: "Food 6",
+      bg: "bg-green-900 dark:bg-green-900"
+    },
+    {
+      id: 11,
+      src: "11.jpg",
+      alt: "Food 6",
+      bg: "bg-green-900 dark:bg-green-900"
+    },
+    {
+      id: 12,
+      src: "12.jpg",
+      alt: "Food 6",
+      bg: "bg-green-900 dark:bg-green-900"
+    },
   ];
 
   const duplicatedImages = [...images, ...images, ...images];
@@ -58,7 +94,7 @@ const FoodGalleryTicker = () => {
 
   return (
     <div className="w-full py-12 md:py-20 overflow-hidden bg-amber-50 dark:bg-black relative transition-colors duration-500">
-          <div className="absolute inset-0 pointer-events-none bg-linear-to-r from-[#007A4D]/10 via-transparent to-[#FFB612]/10" />
+      <div className="absolute inset-0 pointer-events-none bg-linear-to-r from-[#007A4D]/10 via-transparent to-[#FFB612]/10" />
       <div className="relative">
         {/* Gradient overlays */}
         <div className="absolute left-0 top-0 bottom-0 w-20 md:w-40 bg-linear-to-r from-amber-50 to-transparent dark:from-black dark:to-transparent z-10 pointer-events-none"></div>
@@ -89,7 +125,7 @@ const FoodGalleryTicker = () => {
                   alt={image.alt}
                   className="w-full h-full object-cover"
                 />
-                
+
                 {/* Hover overlay */}
                 <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 dark:group-hover:bg-white/10 transition-all duration-500"></div>
               </div>

@@ -103,17 +103,6 @@ const SeafoodSection = () => {
                 </p>
               </div>
             </div>
-
-            {/* Button */}
-            <div className="mt-8" data-aos="zoom-in" data-aos-delay="800">
-              <button className="relative px-6 py-3 font-semibold rounded-md shadow-lg hover:scale-105 transition-transform duration-300 bg-[#007A4D] text-white dark:bg-[#1C3B45] dark:text-[#FFD700]">
-                Read More
-                <span
-                  className="absolute left-0 bottom-0 h-0.5 w-full animate-ping"
-                  style={{ backgroundColor: "#FFB612" }}
-                />
-              </button>
-            </div>
           </div>
 
           {/* Right Content */}

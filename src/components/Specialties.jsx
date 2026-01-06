@@ -15,19 +15,19 @@ const Specialties = () => {
       img: "/food2.jpeg",
       title: "Okra Soup",
       desc: "Ladies finger or bhindi. This is an incredibly rich source health benefiting. Very delicious. Served with choice of your side",
-      price: "£12.99",
+      price: "£13.00",
     },
     {
       img: "/food1.jpeg",
       title: "Egussi with Assorted Meat",
       desc: "Special melon seeds cooked with selected African spices. Very delicious. Served with choice of your side.",
-      price: "£13.99",
+      price: "£14.00",
     },
     {
-      img: "/food3.jpeg",
+      img: "/menu/fish-rice.png",
       title: "Fried Rice with Fish",
       desc: "Savory fried rice with tender fish, offering a delightful blend of flavors in every bite.",
-      price: "£13.99",
+      price: "£14.00",
     },
   ];
 
@@ -50,7 +50,7 @@ const Specialties = () => {
           data-aos="fade-up"
           data-aos-delay="200"
         >
-          Chefs Specialities
+          Chef’s Specialities
         </h2>
 
         {/* Grid Items */}

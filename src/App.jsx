@@ -36,7 +36,6 @@ const App = () => {
           <Navbar />
           < ScrollToTop />
           <Routes>
-
             {/* Home page route */}
             <Route
               path="/"
@@ -45,9 +44,7 @@ const App = () => {
                   <Hero />
                   {/* <AboutStory /> */}
                   <DelightfulExperience />
-
                   <SeafoodSection />
-
                   <Specialties />
                   <OurServices />
                   <MenuSection />
@@ -58,21 +55,6 @@ const App = () => {
                 </>
               }
             />
-
-            {/* Menu page route */}
-
-
-            {/* About page route (optional) */}
-            <Route path="/about" element={
-              <>
-
-
-
-
-              </>
-
-            } />
-
             <Route path="/contact" element={<ContactUs />} />
             <Route path="/terms-conditions" element={<TermsConditions />} />
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />

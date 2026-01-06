@@ -84,7 +84,8 @@ const Hero = () => {
             data-aos-delay="400"
           >
             {/* Food Menu Button */}
-            <button
+            <a
+              href="#menu"
               className="
                 px-6 py-3 rounded-lg font-semibold hover:scale-105 duration-200
                 bg-[#007A4D] text-white
@@ -92,10 +93,11 @@ const Hero = () => {
               "
             >
               Food Menu
-            </button>
+            </a>
 
             {/* Book Table Button */}
-            <button
+            <a
+              href="#contact"
               className="
                 px-6 py-3 rounded-lg font-semibold hover:scale-105 duration-200
                 bg-[#FFB612] text-black
@@ -103,7 +105,7 @@ const Hero = () => {
               "
             >
               Book Table
-            </button>
+            </a>
           </div>
         </div>
       </div>

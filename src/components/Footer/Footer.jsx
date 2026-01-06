@@ -40,20 +40,20 @@ const Footer = () => {
             </li>
             <li>
               <a
+                href="#about"
+                className="transition hover:text-[#007A4D]"
+                style={{ color: "#FFFFFF" }}
+              >
+                About
+              </a>
+            </li>
+            <li>
+              <a
                 href="#menu"
                 className="transition hover:text-[#007A4D]"
                 style={{ color: "#FFFFFF" }}
               >
                 Menu
-              </a>
-            </li>
-            <li>
-              <a
-                href="#services"
-                className="transition hover:text-[#007A4D]"
-                style={{ color: "#FFFFFF" }}
-              >
-                Services
               </a>
             </li>
             <li>
