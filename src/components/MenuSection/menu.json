@@ -6,35 +6,31 @@
     "items": [
       {
         "name": "Puff Puff x 10",
-        "description": "Dumplings",
         "price": "£4.00",
         "rating": "84% (126)",
         "image": "/menu/puff.jpeg"
       },
       {
         "name": "Chicken Wings x 6",
-        "description": "Juicy chicken wings, perfect as a starter to tantalize your taste buds.",
         "price": "£4.00",
         "rating": "88% (99)",
         "image": "/menu/chicken.jpeg"
       },
       {
         "name": "Fish Pepper Soup",
-        "description": "Fresh fish in a spicy pepper broth.",
         "price": "£10.00",
         "rating": "78% (23)",
         "image": "/menu/fish.jpeg"
       },
       {
         "name": "Fried Chicken Gizzards",
-        "description": "Crispy fried gizzards, a traditional African delicacy.",
         "price": "£10.00",
         "rating": "88% (18)",
         "image": "/menu/chicken-gizzards.jpeg"
       },
       {
         "name": "Taba or Soya or Yamachoma",
-        "description": "Lip-smacking traditional grill goat meat.",
+        "description": "Lip-smacking traditional grill goat meat",
         "price": "£10.00",
         "rating": "85% (47)",
         "image": "/menu/taba.jpeg"
@@ -64,95 +60,84 @@
   {
     "id": "Rice",
     "title": "Rice",
-    "subtitle": "",
+    "subtitle": "This is a very popular freshly made rice dish in most African countries. Made with tomatoes, onions and special spices.",
     "items": [
       {
         "name": "Fried Rice with Chicken",
         "price": "£12.00",
         "rating": "92% (102)",
-        "description": "Fried Rice with Chicken",
         "image": "/menu/chicken-rice.png"
       },
       {
         "name": "Jellof Rice with Chicken",
         "price": "£12.00",
         "rating": "93% (107)",
-        "description": "This is a very popular freshly made rice dish in most African countries. Made with tomatoes, onions and special spices.",
         "image": "/menu/jellof.png"
       },
       {
         "name": "Jellof Rice with Fish",
         "price": "£14.00",
         "rating": "82% (96)",
-        "description": "This is a very popular freshly made rice dish in most African countries. Made with tomatoes, onions, and special spices.",
         "image": "/menu/jellof-fish.png"
       },
       {
         "name": "Jellof Rice with Beef",
         "price": "£13.00",
         "rating": "79% (54)",
-        "description": "This is a very popular freshly made rice dish in most African countries. Made with tomatoes, onions, and special spices.",
         "image": "/menu/jellof-beef.png"
       },
       {
         "name": "Fried Rice with Fish",
         "price": "£14.00",
         "rating": "90% (20)",
-        "description": "Savory fried rice with tender fish, offering a delightful blend of flavors in every bite.",
         "image": "/menu/fish-rice.png"
       },
       {
         "name": "Jellof Rice with Assorted Meat",
         "price": "£13.00",
-        "rating": "82% (56)",
-        "description": "This is a very popular freshly made rice dish in most African countries. Made with tomatoes, onions, and special spices."
+        "rating": "82% (56)"
       },
       {
         "name": "Fried Rice with Beef",
         "price": "£13.00",
-        "rating": "75% (16)",
-        "description": "Beef and rice combined in a flavorful dish."
+        "rating": "75% (16)"
       }
     ]
   },
   {
     "id": "egussi-dishes",
-    "title": "Egussi Dishes",
-    "subtitle": "Special melon seed delicacies",
+    "title": "Egussi",
+    "subtitle": "Special melon seed cooked with selelcted African spices. Enjoy with pounded yam.",
     "items": [
       {
         "name": "Egussi with Fish",
         "price": "£14.00",
         "rating": "76% (13)",
-        "description": "Egussi with Fish",
         "image": "/menu/egussi-fish.png"
       },
       {
         "name": "Egussi with Assorted Meat",
         "price": "£14.00",
         "rating": "78% (55)",
-        "description": "Special melon seeds cooked with selected African spices. Very delicious. Served with choice of your side.",
         "image": "/menu/egussi-meat.png"
       },
       {
         "name": "Egussi with Beef",
         "price": "£14.00",
         "rating": "79% (43)",
-        "description": "Special melon seeds cooked with selected African spices. Very delicious. Served with choice of your side.",
         "image": "/menu/egussi-beef.png"
       }
     ]
   },
   {
     "id": "soups",
-    "title": "Okra Soups",
-    "subtitle": "Nutritious and flavorful soups",
+    "title": "Okra Soups / Laadies' Fingers Bhindi",
+    "subtitle": "This tasty dish has many health benefits. Enjoy with pounded yam, fufu (cassava flour) or sadza.",
     "items": [
       {
         "name": "Okra Soup with Chicken",
         "price": "£13.00",
         "rating": "87% (115)",
-        "description": "Ladies finger or bhindi. This is an incredibly rich source of health benefits.",
         "image": "/menu/okra-soup.png"
       },
       {
@@ -165,7 +150,6 @@
         "name": "Okra Soup with Fried Fish",
         "price": "£14.00",
         "rating": "89% (28)",
-        "description": "This is a nutritious dish made from a rare vegetable leaf mixed with palm oil and traditional African spices.",
         "image": "/menu/eru.png"
       },
       {
@@ -179,13 +163,12 @@
   {
     "id": "ERU Soups",
     "title": "ERU Soups / OKAZI Soups",
-    "subtitle": "Nutritious and flavorful soups",
+    "subtitle": "This is a nutritious dish made from a wild vegetable leaf mixed with palm oil and traditional African spices. Enjoy with pouned yam, fufu (cassava flour) or garl.",
     "items": [
       {
         "name": "ERU Soup / OKAZI Soup",
         "price": "£14.00",
         "rating": "87% (115)",
-        "description": "Ladies finger or bhindi. This is an incredibly rich source of health benefits.",
         "image": "/menu/okra-soup.png"
       }
     ]
@@ -205,7 +188,7 @@
   {
     "id": "Ogbono Soups",
     "title": "Ogbono Soups",
-    "subtitle": "Nutritious and flavorful soups",
+    "subtitle": "Ogbono soup is a nigerian dish made with grinded ogbono seeds and some special spices. Enjoy with pounded yam, fufu (cassava flour) or garri.",
     "items": [
       {
         "name": "Ogbono Soup with Beef",
@@ -235,9 +218,9 @@
     "items": [
       {
         "name": "Poulet Dg",
-        "price": "£14.99",
+        "price": "£14.00",
         "rating": "66% (3)",
-        "description": "This fricassee of chicken, vegetables, and savory special spices.",
+        "description": "This fricassee of chicken mixed with fried plantain, fresh vegetables, and savory special spices.",
         "image": "/menu/poulet-dg.png"
       }
     ]
@@ -245,62 +228,58 @@
   {
     "id": "stew-dishes",
     "title": "Stew Dishes",
-    "subtitle": "Hearty and flavorful stews",
+    "subtitle": "A blend of tomatoes, and some special seasoning spices. Enjoy with plain boiled rice",
     "items": [
       {
         "name": "Chicken Stew",
         "price": "£13.00",
         "rating": "90% (20)",
-        "description": "A blend of tomatoes, and some special seasoning spices. Served with choice of your side.",
         "image": "/menu/chicken-stew.png"
       },
       {
         "name": "Beef Stew",
         "price": "£13.00",
         "rating": "84% (25)",
-        "description": "A blend of tomatoes, and some special seasoning spices. Served with choice of your side.",
         "image": "/menu/beef-stew.png"
       },
       {
         "name": "Assorted Meat Stew",
         "price": "£13.00",
-        "rating": "80% (21)",
-        "description": "A blend of tomatoes, and some special seasoning spices. Served with choice of your side."
+        "rating": "80% (21)"
       },
       {
         "name": "Fish Stew",
         "price": "£14.00",
-        "rating": "83% (6)",
-        "description": "A blend of tomatoes, and some special seasoning spices. Served with choice of your side."
+        "rating": "83% (6)"
       }
     ]
   },
   {
     "id": "fish-grill",
     "title": "Fish Grill",
-    "subtitle": "Spicy Cameroonian-style grilled fish",
+    "subtitle": "A Spicy Cameroonian style, marinated grilled fish",
     "items": [
       {
         "name": "Tilapia (Large)",
         "price": "£25.00",
         "rating": "82% (28)",
-        "description": "This is a spicy Cameroonian-style marinated grilled fish. Served with choice of your side.",
+        
         "image": "/menu/tilapia.png"
       },
       {
         "name": "Tilapia (Extra Large)",
-        "price": "£30.00",
-        "description": "This is a spicy Cameroonian-style marinated grilled fish. Served with choice of your side."
+        "price": "£30.00"
+        
       },
       {
         "name": "Croaker (Large)",
-        "price": "£25.00",
-        "description": "This is a spicy Cameroonian-style marinated grilled fish. Served with choice of your side."
+        "price": "£25.00"
+        
       },
       {
         "name": "Croaker (Extra Large)",
-        "price": "£30.00",
-        "description": "This is a spicy Cameroonian-style marinated grilled fish. Served with choice of your side."
+        "price": "£30.00"
+        
       }
     ]
   },
@@ -311,78 +290,68 @@
     "items": [
       {
         "name": "Chicken Grill (Half)",
-        "price": "£15.00",
-        "description": "Flavoursome grilled chicken. Served with choice of your side."
+        "price": "£15.00"
       },
       {
         "name": "Chicken Grill (Full)",
-        "price": "£25.00",
-        "description": "Flavoursome grilled chicken. Served with choice of your side."
+        "price": "£25.00"
       }
     ]
   },
   {
     "id": "maffe-dishes",
     "title": "Maffe",
-    "subtitle": "Grilled peanut stew cooked with selected African spices",
+    "subtitle": "Grilled peanut stew cooked with selected African spices. Enjoy with plain boild rice",
     "items": [
       {
         "name": "Maffe with Beef",
         "price": "£13.00",
-        "rating": "70% (10)",
-        "description": "Grilled peanut stew cooked with selected African spices. Very popular meal. Served with choice of your side."
+        "rating": "70% (10)"
       },
       {
         "name": "Maffe with Fresh Fried Fish",
-        "price": "£14.00",
-        "description": "Grilled peanut stew cooked with selected African spices. Very popular meal. Served with choice of your side."
+        "price": "£14.00"
       },
       {
         "name": "Maffe with Fish",
-        "price": "£14.00",
-        "description": "Grilled peanut stew cooked with selected African spices. Very popular meal. Served with choice of your side."
+        "price": "£14.00"
       },
       {
         "name": "Maffe with Chicken",
         "price": "£12.00",
-        "rating": "75% (4)",
-        "description": "Grilled peanut stew cooked with selected African spices. Very popular meal. Served with choice of your side."
+        "rating": "75% (4)"
       }
     ]
   },
   {
     "id": "ndole-dishes",
-    "title": "Ndole Dishes",
-    "subtitle": "Bitter Leaf Stew – Favourite Cameroonian dish",
+    "title": "Ndole (Bitter Leaf Stew)",
+    "subtitle": "Favourite Cameroonian dish made from bitter leaf balanced with white peanut in a blend of traditional spices. Enjoy with fried plaintain or plain boiled rice",
     "items": [
       {
         "name": "Ndole with Chicken",
-        "price": "£13.00",
-        "description": "Bitter Leaf Stew. Favourite Cameroonian dish made from bitter leaf balanced with white peanut in a blend of traditional spices. Served with choice of your side."
+        "price": "£13.00"
       },
       {
         "name": "Ndole with Beef",
         "price": "£13.00",
-        "rating": "100% (4)",
-        "description": "Bitter Leaf Stew. Favourite Cameroonian dish made from bitter leaf balanced with white peanut in a blend of traditional spices. Served with choice of your side."
+        "rating": "100% (4)"
       },
       {
         "name": "Ndole with Fried Fish",
-        "price": "£14.00",
-        "description": "Bitter Leaf Stew. Favourite Cameroonian dish made from bitter leaf balanced with white peanut in a blend of traditional spices. Served with choice of your side."
+        "price": "£14.00"
       }
     ]
   },
   {
     "id": "veggie-delight",
-    "title": "Veggie Delight or Fried Spinach",
-    "subtitle": "Vegetarian and plant-based dishes",
+    "title": "Veggie Delight / Fried Spinach",
+    "subtitle": "Enjoy with sadza, pounded yam or semolina",
     "items": [
       {
         "name": "Veggie Delight or Fried Spinach With Chicken",
         "price": "£13.00",
-        "rating": "100% (4)",
-        "description": "Served with choice of your side."
+        "rating": "100% (4)"
       },
       {
         "name": "Veggie Delight or Fried Spinach with Fried Fish",
@@ -399,24 +368,44 @@
     ]
   },
   {
+    "id": "specials",
+    "title": "Fried Red Kidney Beans",
+    "subtitle": "Enjoy with fried plantain or plain boiled rice",
+    "items": [
+      {
+        "name": "Fried Red Kidney Beans with Chicken",
+        "price": "£13.00",
+        "badge": "Popular"
+      },
+       {
+        "name": "Fried Red Kidney Beans with Fried Fish",
+        "price": "£14.00",
+        "badge": "Popular"
+      },
+       {
+        "name": "Fried Red Kidney Beans with Assorted Meat",
+        "price": "£13.00",
+        "badge": "Popular"
+      }
+
+    ]
+  },
+  {
     "id": "vegetarian-dishes",
     "title": "Vegetarian Dishes",
-    "subtitle": "Healthy plant-based options",
+    "subtitle": "All vegetarian dishes are served with one side of your choice",
     "items": [
       {
         "name": "Fried Spinach",
-        "price": "£10.00",
-        "description": "Served with choice of your side."
+        "price": "£10.00"
       },
       {
         "name": "Sauteed Mixed Vegetables",
-        "price": "£10.00",
-        "description": "Served with choice of your side."
+        "price": "£10.00"
       },
       {
         "name": "Sauteed Beans",
-        "price": "£10.00",
-        "description": "Served with choice of your side."
+        "price": "£10.00"
       },
       {
         "name": "Fried Rice",
@@ -427,25 +416,24 @@
   {
     "id": "sides",
     "title": "Sides",
-    "subtitle": "Traditional African sides",
     "items": [
       {
         "name": "Fried Plantain",
         "price": "£4.00",
         "rating": "90% (172)",
-        "description": "Plantains have a banana look but contain more starch and less sugar. Very nutritious."
+        "description": "Ripe plantain with its banana look contains more starch and less sugar. Very nutritious"
       },
       {
         "name": "Pounded Yam",
         "price": "£4.00",
         "rating": "83% (24)",
-        "description": "Very popular Nigerian side dish made from boiled and pounded white yam."
+        "description": "A very popular Nigerian side dish made from boiled and pounded white yam"
       },
       {
         "name": "Fufu",
         "price": "£4.00",
         "rating": "88% (17)",
-        "description": "Made with flour from cassava roots or tubers."
+        "description": "Made with flour from cassava roots."
       },
       {
         "name": "Boiled Rice",
@@ -453,38 +441,37 @@
         "rating": "86% (22)"
       },
       {
-        "name": "Garri or Eba",
+        "name": "Garri / Eba",
         "price": "£4.00",
         "rating": "80% (5)",
-        "description": "A fine to coarse granular flour from cassava roots. Popular because it can go with any African vegetable soup."
+        "description": "This is a fine to coarse granola flour made from cassava roots. A very popular accompaniment to African vegetable soup."
       },
       {
-        "name": "Sadza or Ugali or Nsima or Banku or Mealie-Meal",
+        "name": "Sadza / Ugali / Nsima / Banku / Mealie-Meal",
         "price": "£4.00",
         "description": "A steamed dumpling made from white maize flour."
       },
       {
         "name": "Chips",
         "price": "£4.00",
-        "rating": "85% (7)",
-        "description": "Thinly sliced fried potatoes."
+        "rating": "85% (7)"
       },
       {
         "name": "Semolina",
         "price": "£4.00",
         "rating": "100% (3)",
-        "description": "Coarse purified wheat middling used to make couscous."
+        "description": "A course purified middling of durum wheat used to make couscous."
       },
       {
         "name": "Atieke",
         "price": "£4.00",
         "rating": "100% (6)",
-        "description": "Western Africa version of gari."
+        "description": "A western African version of gari"
       },
       {
         "name": "Bobolo",
         "price": "£4.00",
-        "description": "Made from cassava tubers and cooked in leaf."
+        "description": "Made from cassava tubers and cooked in leaves."
       },
       {
         "name": "Rice & Peas",
@@ -499,7 +486,6 @@
   {
     "id": "african-juices",
     "title": "African Juices",
-    "subtitle": "Refreshing African-inspired drinks",
     "items": [
       {
         "name": "Fanta",
@@ -642,7 +628,7 @@
     {
       "id": "spirit-shots",
       "title": "Spirit Shots",
-      "subtitle" : "Single - £4 | Double - £8",
+      "subtitle": "Single - £4 | Double - £8",
       "items": [
         {
           "name": "Courvoisier"
