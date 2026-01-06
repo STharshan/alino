@@ -374,18 +374,15 @@
     "items": [
       {
         "name": "Fried Red Kidney Beans with Chicken",
-        "price": "£13.00",
-        "badge": "Popular"
+        "price": "£13.00"
       },
        {
         "name": "Fried Red Kidney Beans with Fried Fish",
-        "price": "£14.00",
-        "badge": "Popular"
+        "price": "£14.00"
       },
        {
         "name": "Fried Red Kidney Beans with Assorted Meat",
-        "price": "£13.00",
-        "badge": "Popular"
+        "price": "£13.00"
       }
 
     ]
@@ -489,8 +486,7 @@
     "items": [
       {
         "name": "Fanta",
-        "price": "£4.00",
-        "badge": "Popular"
+        "price": "£4.00"
       },
       {
         "name": "Supermalt",

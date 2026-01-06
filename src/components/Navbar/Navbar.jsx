@@ -34,20 +34,14 @@ export default function Navbar() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-20 lg:h-24">
             {/* Logo */}
-            <a href="/" className="shrink-0 z-50">
               <div className="flex items-center space-x-2 text-white">
                 {/* Logo Image */}
                 <img
-                  src="/logo.jpeg" // <-- replace with your logo path
+                  src="/logo.png" 
                   alt="Alino Logo"
-                  className="w-15 h-15  object-contain"
+                  className="w-45 h-45  object-contain"
                 />
-                {/* Company Name */}
-                <span className="text-2xl lg:text-3xl font-serif tracking-wider">
-                  ALINO
-                </span>
               </div>
-            </a>
 
             {/* Desktop Navigation - Hidden on mobile */}
             <div className="hidden lg:flex items-center space-x-8">

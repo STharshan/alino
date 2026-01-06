@@ -16,16 +16,23 @@ const COLORS = {
 };
 
 // ---------- Utility ----------
-const paginateByHeight = (items, maxHeight = 550) => {
+const paginateByHeight = (items = [], maxHeight = 550) => {
+  if (!Array.isArray(items) || items.length === 0) return [];
+
   const pages = [];
   let currentPage = [];
   let currentHeight = 0;
 
   items.forEach((item) => {
-    const isSmallScreen = typeof window !== "undefined" && window.innerWidth < 640;
+    const isSmallScreen =
+      typeof window !== "undefined" && window.innerWidth < 640;
+
     const baseHeight = isSmallScreen ? 220 : 120;
     const estimatedHeight =
-      baseHeight + (item.description ? Math.min(item.description.length /4, 150) : 0);
+      baseHeight +
+      (item?.description
+        ? Math.min(item.description.length / 4, 150)
+        : 0);
 
     if (currentHeight + estimatedHeight > maxHeight && currentPage.length > 0) {
       pages.push(currentPage);
@@ -38,8 +45,10 @@ const paginateByHeight = (items, maxHeight = 550) => {
   });
 
   if (currentPage.length > 0) pages.push(currentPage);
+
   return pages;
 };
+
 
 // ---------- Shared Page ----------
 const Page = forwardRef(({ children, className = "" }, ref) => (
@@ -133,8 +142,8 @@ const InfoPage = forwardRef((_, ref) => (
         About Us
       </h2>
       <p className="mt-2 text-sm text-neutral-700 dark:text-gray-300">
-        Welcome to <span className="font-semibold">Alino African Restaurant</span>, 
-        where seasonal produce meets cozy vibes. Our kitchen crafts familiar classics 
+        Welcome to <span className="font-semibold">Alino African Restaurant</span>,
+        where seasonal produce meets cozy vibes. Our kitchen crafts familiar classics
         with a modern twist. Thank you for dining with us!
       </p>
 
