@@ -52,7 +52,7 @@ const App = () => {
                   <OurServices />
                   <MenuSection />
                   <FoodGalleryTicker />
-                  <OrderOnline />
+                  {/* <OrderOnline /> */}
                   <ReviewsSlider />
                   <ContactUs />
                 </>
