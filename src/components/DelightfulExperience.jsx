@@ -13,7 +13,7 @@ export default function DelightfulExperience() {
   const services = [
     {
       icon: <MdFreeBreakfast className="text-[#007A4D]" />,
-      video: "/video.mp4",
+      video: "/v3.mp4",
       title: "A Decade of Passion & Flavor",
       description:
         "For over a decade, Alino African Restaurant has been Leicester's destination for authentic African cuisine. Our story began with a unique blend of passions—Alino's love for music and entertainment from his years traveling the country as a DJ, and his wife's deep passion for the culinary arts.",
