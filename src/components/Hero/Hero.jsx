@@ -2,7 +2,6 @@
 import React, { useState, useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import Logo from "/logo.jpeg";
 
 const Hero = () => {
   const taglines = [

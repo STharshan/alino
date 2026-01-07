@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X, Phone } from 'lucide-react';
 import ThemeToggle from '../ThemeToggle';
+import { HashLink } from 'react-router-hash-link';
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -68,9 +69,12 @@ export default function Navbar() {
 
             {/* Right Side */}
             <div className="flex items-center space-x-4">
-              <a className="hidden sm:block bg-[#FFB612] hover:bg-amber-700 text-black px-6 py-2.5 rounded-sm text-sm font-medium transition-colors duration-300">
+              <HashLink 
+                to="/#contact"
+                smooth
+                className="hidden sm:block bg-[#FFB612] hover:bg-amber-700 text-black px-6 py-2.5 rounded-sm text-sm font-medium transition-colors duration-300">
                 Reservations
-              </a>
+              </HashLink>
 
               <ThemeToggle />
 
