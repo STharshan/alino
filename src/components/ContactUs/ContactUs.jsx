@@ -35,9 +35,38 @@ const ContactUs = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    alert("Thank you! Your message has been sent.");
-    setFormData({ name: "", email: "", phone: "", message: "" });
+
+    const { name, email, phone, message } = formData;
+
+    // minimal required validation (silent)
+    if (!name || !email || !message) return;
+
+    const whatsappNumber = "447737098045"; // no +
+
+    const whatsappMessage = `
+New Contact Enquiry
+
+Name: ${name}
+Email: ${email}
+Phone: ${phone}
+Message:
+${message}
+  `;
+
+    const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
+      whatsappMessage
+    )}`;
+
+    window.open(whatsappURL, "_blank");
+
+    setFormData({
+      name: "",
+      email: "",
+      phone: "",
+      message: "",
+    });
   };
+
 
   return (
     <section className="relative  py-20 px-6 lg:px-20 overflow-hidden bg-white scroll-m-10 dark:bg-black transition-colors">
@@ -117,7 +146,7 @@ const ContactUs = () => {
             >
               Send Message
             </button>
-              <p className="text-xs text-center dark:text-gray-300 mt-5">By submitting this form, you agree to us processing your details to respond to your enquiry. Your information is handled securely and in line with our Privacy Policy.</p>
+            <p className="text-xs text-center dark:text-gray-300 mt-5">By submitting this form, you agree to us processing your details to respond to your enquiry. Your information is handled securely and in line with our Privacy Policy.</p>
           </form>
 
           {/* Contact Info */}
@@ -127,13 +156,35 @@ const ContactUs = () => {
           >
             <h2 className="text-2xl font-semibold mb-6 text-black dark:text-white">Get in touch</h2>
             <p className="mb-3 text-gray-700 dark:text-gray-300">
-              <strong className="text-[#007A4D] dark:text-[#00FF8C]">Address:</strong> 11 Narborough Rd Leicester LE3 0LE
+              <strong className="text-[#007A4D] dark:text-[#00FF8C]">Address:</strong>{" "}
+              <a
+                href="https://maps.app.goo.gl/X9MaGHdrdnypXHje6"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:underline"
+              >
+                11 Narborough Rd, Leicester LE3 0LE, United Kingdom
+              </a>
             </p>
+
             <p className="mb-3 text-gray-700 dark:text-gray-300">
-              <strong className="text-[#007A4D] dark:text-[#00FF8C]">Phone:</strong> +44 7737 098045
+              <strong className="text-[#007A4D] dark:text-[#00FF8C]">Phone:</strong>{" "}
+              <a
+                href="tel:+447737098045"
+                className="hover:underline"
+              >
+                +44 7737 098045
+              </a>
             </p>
+
             <p className="mb-3 text-gray-700 dark:text-gray-300">
-              <strong className="text-[#007A4D] dark:text-[#00FF8C]">Email:</strong> alinoltd@gmail.com
+              <strong className="text-[#007A4D] dark:text-[#00FF8C]">Email:</strong>{" "}
+              <a
+                href="mailto:alinoltd@gmail.com"
+                className="hover:underline"
+              >
+                alinoltd@gmail.com
+              </a>
             </p>
             <p className="mb-6 text-gray-700 dark:text-gray-300">
               <strong className="text-[#007A4D] dark:text-[#00FF8C]">Opening Hours:</strong> Mon-Sun: 10:00 AM - 10:00 PM
@@ -143,7 +194,7 @@ const ContactUs = () => {
             <div className="w-full h-104 rounded-xl overflow-hidden shadow-md">
               <iframe
                 title="Restaurant Location"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2436.858171793637!2d-1.143451!3d52.629721!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48776121a3b8a7db%3A0xc2ec7f1e1a13e740!2s11%20Narborough%20Rd%2C%20Leicester%20LE3%200LE%2C%20UK!5e0!3m2!1sen!2suk!4v1693220000000!5m2!1sen!2suk"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2421.635833947923!2d-1.1481993!3d52.6304247!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487761d658176503%3A0x8966cbad0f1f790c!2sALINO!5e0!3m2!1sen!2slk!4v1767791559998!5m2!1sen!2slk"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}

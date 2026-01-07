@@ -32,8 +32,8 @@ const Banner = () => {
       className="relative py-20 lg:py-32 overflow-hidden"
       style={{ backgroundColor: "#FFFFFF" }} // ✅ saved background color
     >
-      {/* Decorative gradient overlay */}
-      <div className="absolute inset-0 pointer-events-none bg-gradient-to-r from-[#007A4D]/10 via-transparent to-[#FFB612]/10" />
+      {/* Decorative linear overlay */}
+      <div className="absolute inset-0 pointer-events-none bg-linear-to-r from-[#007A4D]/10 via-transparent to-[#FFB612]/10" />
 
       <div className="container mx-auto px-6 lg:px-20 relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">

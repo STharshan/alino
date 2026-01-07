@@ -20,14 +20,14 @@ export default function DelightfulExperience() {
     },
     {
       icon: <FaUtensils className="text-[#007A4D]" />,
-      video: "/video.mp4",
+      video: "/v1.mp4",
       title: "Creating an Extraordinary Dining Experience",
       description:
         "Together, they created something extraordinary: a dining experience that brings the rhythm and soul of Africa to every plate. We import our ingredients directly from the motherland, ensuring the most authentic and vibrant flavors in every dish.",
     },
     {
       icon: <FaMusic className="text-[#007A4D]" />,
-      video: "/video.mp4",
+      video: "/v2.mp4",
       title: "A Celebration of African Cultures",
       description:
         "Our cuisine is a celebration—a blend of cultures and tastes from across Africa, crafted by chefs from diverse backgrounds who share one vision: to bring you the best and most authentic African dining experience.",
@@ -63,7 +63,7 @@ export default function DelightfulExperience() {
   };
 
   return (
-    <section id="about" className="relative py-20 px-4 md:px-12 overflow-visible transition-colors duration-700 bg-white dark:bg-black">
+    <section id="about" className="scroll-m-10 relative py-20 px-4 md:px-12 overflow-visible transition-colors duration-700 bg-white dark:bg-black">
       <div className="absolute inset-0 pointer-events-none bg-linear-to-r from-[#007A4D]/10 via-transparent to-[#FFB612]/10 " />
       <div className="max-w-7xl mx-auto text-center font-serif relative z-10">
         {/* Heading */}

@@ -17,8 +17,8 @@ const AboutStory = () => {
       className="relative py-20 overflow-hidden"
       style={{ backgroundColor: "#FFFFFF" }}
     >
-      {/* Gradient overlay */}
-      <div className="absolute inset-0 pointer-events-none bg-gradient-to-r from-[#007A4D]/10 via-transparent to-[#FFB612]/10" />
+      {/* linear overlay */}
+      <div className="absolute inset-0 pointer-events-none bg-linear-to-r from-[#007A4D]/10 via-transparent to-[#FFB612]/10" />
 
       <div className="container mx-auto px-4 lg:px-12 max-w-7xl relative z-10">
         {/* Section Heading */}
@@ -43,7 +43,7 @@ const AboutStory = () => {
               style={{ color: "#000000" }}
             >
               <IoMusicalNotes
-                className="h-7 w-7 flex-shrink-0 mt-1"
+                className="h-7 w-7 shrink-0 mt-1"
                 style={{ color: "#FFB612" }}
               />
               <span>
@@ -63,7 +63,7 @@ const AboutStory = () => {
               style={{ color: "#000000" }}
             >
               <IoHeart
-                className="h-7 w-7 flex-shrink-0 mt-1"
+                className="h-7 w-7 shrink-0 mt-1"
                 style={{ color: "#007A4D" }}
               />
               <span>
@@ -79,7 +79,7 @@ const AboutStory = () => {
               style={{ color: "#000000" }}
             >
               <IoRestaurant
-                className="h-7 w-7 flex-shrink-0 mt-1"
+                className="h-7 w-7 shrink-0 mt-1"
                 style={{ color: "#FFB612" }}
               />
               <span>

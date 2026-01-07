@@ -76,9 +76,34 @@ const Footer = () => {
           >
             Contact Us
           </h2>
-          <p style={{ color: "#E5E5E5" }}>11 Narborough Rd Leicester LE3 0LE</p>
-          <p style={{ color: "#E5E5E5" }}>+44 7737 098045</p>
-          <p style={{ color: "#E5E5E5" }}>alinoltd@gmail.com</p>
+          <p style={{ color: "#E5E5E5" }}>
+            <a
+              href="https://maps.app.goo.gl/X9MaGHdrdnypXHje6"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ color: "#E5E5E5", textDecoration: "none" }}
+            >
+              11 Narborough Rd, Leicester LE3 0LE, <br /> United Kingdom
+            </a>
+          </p>
+
+          <p style={{ color: "#E5E5E5" }}>
+            <a
+              href="tel:07737098045"
+              style={{ color: "#E5E5E5", textDecoration: "none" }}
+            >
+              +44 7737 098045
+            </a>
+          </p>
+
+          <p style={{ color: "#E5E5E5" }}>
+            <a
+              href="mailto:alinoltd@gmail.com"
+              style={{ color: "#E5E5E5", textDecoration: "none" }}
+            >
+              alinoltd@gmail.com
+            </a>
+          </p>
           <div className="flex mt-4 space-x-3">
             <a
               href="https://web.facebook.com/AlinoRestaurantBar/?locale=en_GB&_rdc=1&_rdr#"
@@ -88,15 +113,15 @@ const Footer = () => {
             >
               <FaFacebookF />
             </a>
-            <a
+            {/* <a
               href="https://instagram.com"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-[#007A4D] hover:bg-[#FFB612] text-white p-2 rounded-full transition transform hover:scale-110"
             >
               <FaInstagram />
-            </a>
-            
+            </a> */}
+
           </div>
         </div>
       </div>
