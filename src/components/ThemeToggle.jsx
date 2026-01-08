@@ -20,7 +20,7 @@ export default function ThemeToggle({ className = "" }) {
     <button
       type="button"
       onClick={toggle}
-      className={`rounded-md border px-3 py-2.5 text-sm flex items-center
+      className={`rounded-md border px-1.5 py-1.5 text-sm flex items-center
                   bg-white text-gray-900 border-gray-300
                   dark:bg-neutral-800 dark:text-gray-100 dark:border-neutral-700 ${className} hover:bg-[#007A4D] cursor-pointer active:bg-[#007A4D] `}
       aria-label="Toggle dark mode"

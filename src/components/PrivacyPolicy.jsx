@@ -129,7 +129,7 @@ const PrivacyPolicy = () => {
           <div className="text-white">
             <p><strong>Alino</strong></p>
             <p>Email: <a href="mailto:alinoltd@gmail.com" className="text-[#D10806] hover:underline">alinoltd@gmail.com</a></p>
-            <p>Phone: +44 7737 098045</p>
+            <p>Phone: +44 116 222 2153</p>
             <p>Address: 11 Narborough Rd Leicester LE3 0LE</p>
           </div>
           <p className="mt-2 text-white">

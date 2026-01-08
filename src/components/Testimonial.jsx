@@ -225,7 +225,7 @@ export default function ReviewsSlider() {
         {/* CTA Button */}
         <div className="flex justify-center mt-8" data-aos="fade-up" data-aos-delay="400">
           <a
-            href="https://www.google.com/search?q=ALINO+Reviews"
+            href="https://www.google.com/search?sca_esv=e1557db837a17fbc&hl=en-GB&sxsrf=ANbL-n5Oh7QRtRoxm2EX3CE_5FiQ7fiOkA:1767895629060&si=AL3DRZEsmMGCryMMFSHJ3StBhOdZ2-6yYkXd_doETEE1OR-qOSZuNZqRzNpMUslve8QplLHQa9usUQ7jj0fV3Lvq2-AwG6Rvv1zVxYuCod2IJiY0krLfhtYySnEXm8mGMEZ7llZ2qizP&q=ALINO+Reviews&sa=X&ved=2ahUKEwj1keG3xPyRAxXxQ_UHHZO8N_4Q0bkNegQIKhAE&biw=1366&bih=633&dpr=1&aic=0"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center px-6 py-3 rounded-md text-sm font-semibold transition

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X, Phone } from 'lucide-react';
 import ThemeToggle from '../ThemeToggle';
-import { HashLink } from 'react-router-hash-link';
+import { FaWhatsapp } from 'react-icons/fa';
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -52,9 +52,8 @@ export default function Navbar() {
     <>
       {/* NAVBAR */}
       <nav
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-400 ${
-          isScrolled ? 'bg-[#090402]' : 'bg-transparent'
-        }`}
+        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-400 ${isScrolled ? 'bg-[#090402]' : 'bg-transparent'
+          }`}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-20 lg:h-24">
@@ -69,12 +68,6 @@ export default function Navbar() {
 
             {/* Right Side */}
             <div className="flex items-center space-x-4">
-              <HashLink 
-                to="/#contact"
-                smooth
-                className="hidden sm:block bg-[#FFB612] hover:bg-amber-700 text-black px-6 py-2.5 rounded-sm text-sm font-medium transition-colors duration-300">
-                Reservations
-              </HashLink>
 
               <ThemeToggle />
 
@@ -92,9 +85,8 @@ export default function Navbar() {
 
       {/* SIDEBAR */}
       <div
-        className={`fixed inset-0 bg-[#090402] z-40 transition-transform duration-500 h-screen ${
-          isMenuOpen ? 'translate-x-0' : 'translate-x-full'
-        }`}
+        className={`fixed inset-0 bg-[#090402] z-40 transition-transform duration-500 h-screen ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'
+          }`}
       >
         <div className="h-full overflow-y-auto pt-24 pb-8">
           <div className="min-h-full flex flex-col lg:flex-row">
@@ -142,27 +134,20 @@ export default function Navbar() {
                 {/* CONTACT */}
                 <div className="space-y-3 sm:space-y-4">
                   <a
-                    href="tel:+447737098045"
+                    href="tel:+441162222153"
                     className="flex items-center space-x-3 text-white hover:text-[#FFB612] transition-colors duration-300 text-sm sm:text-base"
                   >
                     <Phone size={18} />
-                    <span>Call us: +44 7737 098045</span>
+                    <span>Call us: +44 116 222 2153</span>
                   </a>
 
                   <a
                     href="https://wa.me/447737098045"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center space-x-3 text-white hover:text-[#FFB612] transition-colors duration-300 text-sm sm:text-base"
+                    className="flex items-center space-x-3 text-white hover:text-[#25D366] transition-colors duration-300 text-sm sm:text-base"
                   >
-                    {/* WhatsApp SVG */}
-                    <svg
-                      className="w-[18px] h-[18px] sm:w-5 sm:h-5"
-                      fill="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347Z" />
-                    </svg>
+                    <FaWhatsapp className="w-[18px] h-[18px] sm:w-5 sm:h-5" />
                     <span>Enquire via WhatsApp</span>
                   </a>
                 </div>

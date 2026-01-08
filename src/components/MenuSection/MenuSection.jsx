@@ -156,7 +156,7 @@ const InfoPage = forwardRef((_, ref) => (
         </div>
         <div className="rounded-2xl border bg-white/60 dark:bg-[#1B1B1B] p-4" data-aos="fade-left">
           <p className="text-sm font-semibold">Contact</p>
-          <p className="text-sm text-neutral-600 dark:text-gray-300">+44 7737 098045</p>
+          <p className="text-sm text-neutral-600 dark:text-gray-300">+44 116 222 2153</p>
           <p className="text-sm text-neutral-600 dark:text-gray-300">alinoltd@gmail.com</p>
         </div>
       </div>
