@@ -7,6 +7,7 @@ import TermsConditions from "../src/components/Term"
 import ScrollToTop from "../src/components/ScrollToTop"
 import GDPRConsent from "./components/GDPRButton";
 import Home from "./page/Home";
+import AlinoNight from "./page/AlinoNight";
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
           < ScrollToTop />
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/alino-night" element={<AlinoNight />} />
             <Route path="/terms-conditions" element={<TermsConditions />} />
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           </Routes>
