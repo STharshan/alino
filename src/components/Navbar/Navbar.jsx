@@ -72,7 +72,7 @@ export default function Navbar() {
                 onClick={openReservation}
                 className="hidden sm:block bg-[#FFB612] hover:bg-[#007A4D] text-white px-6 py-2.5 rounded-sm text-sm font-medium transition-colors"
               >
-                Reservations
+                order online
               </button>
 
               <ThemeToggle />
@@ -131,7 +131,7 @@ export default function Navbar() {
                   onClick={openReservation}
                   className="w-auto bg-[#FFB612] hover:bg-[#007A4D] text-white text-sm px-4 py-2 mb-6 rounded transition"
                 >
-                  Reservations
+                  order online
                 </button>
 
                 {/* Contact */}
@@ -168,14 +168,14 @@ export default function Navbar() {
           {/* 🔹 HIDDEN WIDGET TRIGGER (REQUIRED) */}
         </div>
       </div>
-          <span
-            className="glf-button"
-            data-glf-cuid="090174fa-7049-49f3-8058-5195366e5e06"
-            data-glf-ruid="2e15d43c-f4d8-4c97-b8b5-ba72b7e75773"
-            style={{ display: "none" }}
-          >
-            Order
-          </span>
+      <span
+        className="glf-button"
+        data-glf-cuid="090174fa-7049-49f3-8058-5195366e5e06"
+        data-glf-ruid="2e15d43c-f4d8-4c97-b8b5-ba72b7e75773"
+        style={{ display: "none" }}
+      >
+        Order
+      </span>
     </>
   );
 }
