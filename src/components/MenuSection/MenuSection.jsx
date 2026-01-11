@@ -291,7 +291,6 @@ export default function MenuFlipbook() {
         {/* Quick Navigator */}
         <div className="mx-auto mt-6 grid grid-cols-2 sm:grid-cols-4 gap-2">
           {sectionsSeed.map((s) => {
-            console.log(s.title);
             const target = sectionPageMap[s.id];
             const isActive =
               page === target || page === target - 1 || page === target + 1;
