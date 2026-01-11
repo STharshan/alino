@@ -65,19 +65,6 @@ export default function Navbar() {
               className="w-40 h-auto object-contain"
             />
 
-            {/* Desktop Menu */}
-            <div className="hidden lg:flex items-center space-x-8">
-              {menuLinks.map((link) => (
-                <a
-                  key={link.title}
-                  href={link.href}
-                  className="text-white hover:text-[#FFB612] transition-colors text-sm tracking-wide"
-                >
-                  {link.title}
-                </a>
-              ))}
-            </div>
-
             {/* Right Actions */}
             <div className="flex items-center space-x-4">
               {/* Reservations Button */}
