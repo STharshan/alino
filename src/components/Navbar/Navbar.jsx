@@ -38,6 +38,7 @@ export default function Navbar() {
   const menuLinks = [
     { title: "HOME", href: "#home" },
     { title: "MENU", href: "#menu" },
+    { title: "ALINO NIGHT LIFE", href: "/alino-night" },
     { title: "CONTACT US", href: "#contact" },
   ];
 
