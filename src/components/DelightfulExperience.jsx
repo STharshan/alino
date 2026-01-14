@@ -1,8 +1,4 @@
-"use client";
-
-import React, { useEffect, useState } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
+import React, { useState } from "react";
 import { FaUtensils, FaMusic } from "react-icons/fa";
 import { MdFreeBreakfast } from "react-icons/md";
 
@@ -33,19 +29,6 @@ export default function DelightfulExperience() {
         "Our cuisine is a celebration—a blend of cultures and tastes from across Africa, crafted by chefs from diverse backgrounds who share one vision: to bring you the best and most authentic African dining experience.",
     },
   ];
-
-  useEffect(() => {
-    AOS.init({ duration: 1000, easing: "ease-in-out", once: true, offset: 80 });
-  }, []);
-
-  useEffect(() => {
-    if (!hovered) {
-      const timer = setInterval(() => {
-        setActiveIndex((p) => (p + 1) % services.length);
-      }, 4000);
-      return () => clearInterval(timer);
-    }
-  }, [hovered]);
 
   const getCardStyle = (index) => {
     const total = services.length;

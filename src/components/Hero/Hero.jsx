@@ -1,7 +1,5 @@
 "use client";
-import React, { useState, useEffect } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
+import React, { useState } from "react";
 
 const Hero = () => {
   const taglines = [
@@ -12,20 +10,6 @@ const Hero = () => {
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
-
-  useEffect(() => {
-    AOS.init({
-      duration: 1000,
-      once: true,
-      easing: "ease-in-out",
-    });
-
-    const interval = setInterval(() => {
-      setCurrentIndex((prev) => (prev + 1) % taglines.length);
-    }, 3000);
-
-    return () => clearInterval(interval);
-  }, []);
 
   /* Load GloriaFood Script ONCE */
   const openReservation = () => {

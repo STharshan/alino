@@ -1,14 +1,6 @@
-import React, { useEffect } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
+import React from "react";
 
 const Specialties = () => {
-  useEffect(() => {
-    AOS.init({
-      duration: 1000,
-      once: false, // animate on scroll down & up
-    });
-  }, []);
 
   const items = [
     {

@@ -1,15 +1,13 @@
 "use client";
 
-import React, { useEffect } from "react";
+import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from "swiper/modules";
 import { FiStar } from "react-icons/fi";
 import { BsArrowLeft, BsArrowRight } from "react-icons/bs";
-import AOS from "aos";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import "aos/dist/aos.css";
 
 const BRAND = {
   green: "#007A4D",
@@ -53,37 +51,7 @@ const testimonials = [
   },
 ];
 
-function InitialAvatar({ name }) {
-  const initials = name
-    .split(" ")
-    .map((n) => n[0])
-    .join("")
-    .slice(0, 2)
-    .toUpperCase();
-
-  return (
-    <div
-      className="w-12 h-12 min-w-12 rounded-full flex items-center justify-center font-semibold text-base"
-      style={{
-        backgroundColor: `${BRAND.green}20`,
-        border: `2px solid ${BRAND.gold}`,
-        color: BRAND.green,
-      }}
-    >
-      {initials}
-    </div>
-  );
-}
-
 export default function ReviewsSlider() {
-  useEffect(() => {
-    AOS.init({
-      duration: 800,
-      once: false,
-      mirror: true,
-      offset: 100,
-    });
-  }, []);
 
   function InitialAvatar({ name }) {
   const initials = name

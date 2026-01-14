@@ -1,27 +1,8 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { FaFish, FaStore, FaUtensils } from "react-icons/fa";
 import { GiCrab } from "react-icons/gi";
-import AOS from "aos";
-import "aos/dist/aos.css";
 
 const SeafoodSection = () => {
-  useEffect(() => {
-    AOS.init({
-      duration: 1000,
-      once: false,
-      mirror: true,
-      offset: 100,
-      easing: "ease-in-out",
-    });
-
-    const refreshTimer = setTimeout(() => AOS.refreshHard(), 300);
-    window.addEventListener("resize", AOS.refresh);
-
-    return () => {
-      clearTimeout(refreshTimer);
-      window.removeEventListener("resize", AOS.refresh);
-    };
-  }, []);
 
   return (
     <section className="py-16 relative overflow-hidden bg-white dark:bg-black transition-colors duration-700">

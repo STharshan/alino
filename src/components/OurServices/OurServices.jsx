@@ -1,32 +1,12 @@
-"use client";
-import React, { useEffect } from "react";
+import React from "react";
 import { FaMobileScreen } from "react-icons/fa6";
 import { MdRestaurantMenu, MdLocalDining } from "react-icons/md";
 import { CiDeliveryTruck } from "react-icons/ci";
-import AOS from "aos";
-import "aos/dist/aos.css";
 
 const OurServices = () => {
-  useEffect(() => {
-    AOS.init({
-      duration: 1000,
-      once: false, // replay every scroll
-      mirror: true, // animate on scroll up
-      offset: 100,
-      easing: "ease-out",
-    });
-
-    const refreshTimer = setTimeout(() => AOS.refreshHard(), 300);
-    window.addEventListener("resize", AOS.refresh);
-
-    return () => {
-      clearTimeout(refreshTimer);
-      window.removeEventListener("resize", AOS.refresh);
-    };
-  }, []);
 
   const services = [
-    {
+    { 
       id: 1,
       icon: <FaMobileScreen className="text-4xl mb-4" style={{ color: "#007A4D" }} />,
       title: "Online Reservations",

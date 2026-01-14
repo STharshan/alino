@@ -1,10 +1,5 @@
-'use client'
-
-import React, { forwardRef, useMemo, useRef, useState, useEffect } from "react";
+import React, { forwardRef, useMemo, useRef, useState } from "react";
 import HTMLFlipBook from "react-pageflip";
-import { motion } from "framer-motion";
-import AOS from "aos";
-import "aos/dist/aos.css";
 import sectionsSeed from "./menu.json";
 
 // ---------- Brand Colors ----------
@@ -183,26 +178,6 @@ export default function MenuFlipbook() {
   const flipRef = useRef(null);
   const [page, setPage] = useState(0);
   const [bookSize, setBookSize] = useState({ width: 700, height: 900 });
-
-  useEffect(() => {
-    AOS.init({
-      duration: 1000,
-      easing: "ease-in-out",
-      once: false,
-    });
-
-    const handleResize = () => {
-      const screenWidth = window.innerWidth;
-      const isMobile = screenWidth < 640;
-      setBookSize({
-        width: isMobile ? screenWidth * 0.9 : 700,
-        height: isMobile ? window.innerHeight * 0.7 : 900,
-      });
-    };
-    handleResize();
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
 
   const { pages, sectionPageMap } = useMemo(() => {
     const arr = [];

@@ -1,7 +1,5 @@
 "use client";
-import React, { useState, useEffect } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
+import React, { useState } from "react";
 
 const ContactUs = () => {
   const [formData, setFormData] = useState({
@@ -11,23 +9,6 @@ const ContactUs = () => {
     message: "",
   });
 
-  useEffect(() => {
-    AOS.init({
-      duration: 1000,
-      once: false,
-      mirror: true,
-      offset: 100,
-      easing: "ease-in-out",
-    });
-
-    const refreshTimer = setTimeout(() => AOS.refreshHard(), 300);
-    window.addEventListener("resize", AOS.refresh);
-
-    return () => {
-      clearTimeout(refreshTimer);
-      window.removeEventListener("resize", AOS.refresh);
-    };
-  }, []);
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
