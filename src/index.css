@@ -1,10 +1,47 @@
 @import "tailwindcss";
 
-@custom-variant dark (&:where(.dark, .dark *));  /* <-- add this line */
+@custom-variant dark (&:where(.dark, .dark *));
+/* <-- add this line */
 
 
-html, body {
-  width: 100%;  
+html,
+body {
+  width: 100%;
   overflow-x: hidden;
   scroll-behavior: smooth;
+}
+
+@layer utilities {
+  /* Row 1: Right to Left */
+  .animate-marquee {
+    animation: marquee 30s linear infinite;
+  }
+
+  @keyframes marquee {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+
+  /* Row 2: Left to Right */
+  .animate-marquee2 {
+    animation: marquee2 30s linear infinite;
+  }
+
+  @keyframes marquee2 {
+    0% {
+      transform: translateX(-50%);
+    }
+    100% {
+      transform: translateX(0%);
+    }
+  }
+}
+
+.invert-calendar-icon::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+    cursor: pointer;
 }

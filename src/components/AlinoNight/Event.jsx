@@ -1,71 +1,63 @@
 import React from 'react';
 
-export default function EventSection() {
+const LiquidCaterersHero = () => {
   return (
-    <div className="min-h-screen bg-black text-white">
-      {/* Main Container */}
-      <div className="flex flex-col lg:flex-row min-h-screen">
-        
-        {/* Left Side - Image Section */}
-        <div className="lg:w-1/2 relative bg-black">
-          <div className="absolute top-8 left-8 md:top-16 md:left-16 z-10">
-            <div className="text-white">
-              <div className="text-8xl md:text-9xl font-bold leading-none" style={{fontFamily: 'Arial, sans-serif'}}>12</div>
-              <div className="text-xl md:text-2xl mt-1 font-light">November</div>
-              <div className="text-xl md:text-2xl font-light">Opening</div>
-            </div>
-          </div>
-          
-          {/* Image with gradient overlay */}
-          <div className="h-96 lg:h-full w-full relative">
-            <div className="absolute inset-0 bg-linear-to-r from-black/60 via-transparent to-transparent z-10"></div>
-            <img 
-              src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=1200&q=80" 
-              alt="Musician performing" 
-              className="w-full h-full object-cover brightness-75"
-            />
-          </div>
-        </div>
+    <section className="bg-white dark:bg-black text-black dark:text-white min-h-screen flex items-center py-16 px-6 md:px-12 lg:px-20 transition-colors duration-500">
+      <div className="absolute inset-0 pointer-events-none bg-linear-to-r from-[#007A4D]/10 via-transparent to-[#FFB612]/10 " />
+      <div className="max-w-7xl mx-auto w-full">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
 
-        {/* Right Side - Content Section */}
-        <div className="lg:w-1/2 flex flex-col justify-center items-end px-8 md:px-16 lg:px-20 xl:px-32 py-16 lg:py-0 bg-black">
-          
-          {/* EVENTS Title */}
-          <div className="w-full text-right mb-20 lg:mb-32">
-            <h1 className="text-7xl md:text-8xl lg:text-9xl font-bold tracking-wider" 
-                style={{
-                  color: '#3a3a3a',
-                  fontFamily: 'Arial, sans-serif',
-                  letterSpacing: '0.05em'
-                }}>
-              EVENTS
+          {/* Left Content: Text and CTA */}
+          <div className="lg:col-span-5 space-y-8 text-center lg:text-left">
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight tracking-wide uppercase">
+              We are not just <br className="hidden lg:block" />
+              bartenders, we are <br className="hidden lg:block" />
+              liquid caterers
             </h1>
+
+            <p className="text-gray-700 dark:text-gray-400 text-sm md:text-base leading-relaxed max-w-lg mx-auto lg:mx-0">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              tempor incididunt ut labore et dolore magna aliqua. Arcu felis
+              bibendum ut tristique et egestas quis ipsum suspendisse.
+              Adipiscing at in tellus integer feugiat blandit massa enim.
+            </p>
+
+            <div className="pt-4">
+              <button className="border border-black/40 dark:border-white/40 px-10 py-3 uppercase tracking-widest text-xs font-semibold 
+                hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-[#050c18] transition-all duration-300">
+                Discover Cocktail
+              </button>
+            </div>
           </div>
 
-          {/* Event Details */}
-          <div className="w-full text-right">
-            {/* Artist Name with Underline */}
-            <div className="mb-8 flex flex-col items-end">
-              <h2 className="text-4xl md:text-5xl lg:text-6xl font-light mb-3" 
-                  style={{fontFamily: 'Arial, sans-serif'}}>
-                Lilly Flat
-              </h2>
-              <div className="w-24 md:w-32 h-px bg-white"></div>
+          {/* Right Content: Image Grid */}
+          <div className="lg:col-span-7 grid grid-cols-1 md:grid-cols-2 gap-6 relative">
+
+            {/* Main Center Image (B&W Style) */}
+            <div className="aspect-4/5 overflow-hidden">
+              <img
+                src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?auto=format&fit=crop&q=80&w=800"
+                alt="Bartender preparing drink"
+                className="w-full h-full object-cover grayscale brightness-75 transition-all duration-700 hover:grayscale-0"
+              />
             </div>
 
-            {/* Description */}
-            <p className="text-sm md:text-base lg:text-lg leading-relaxed max-w-md ml-auto" 
-               style={{
-                 color: '#e0e0e0',
-                 fontFamily: 'Arial, sans-serif',
-                 lineHeight: '1.8'
-               }}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam at sapien pharetra nunc ultricies mollis. Integer quis varius diam.
-            </p>
+            {/* Side Image (Partially cut off/Offset like original) */}
+            <div className="hidden md:block aspect-4/5 overflow-hidden translate-y-12 lg:translate-y-20">
+              <img
+                src="https://images.unsplash.com/photo-1551024709-8f23befc6f87?auto=format&fit=crop&q=80&w=800"
+                alt="Finished cocktails"
+                className="w-full h-full object-cover"
+              />
+            </div>
+
+
           </div>
 
         </div>
       </div>
-    </div>
+    </section>
   );
-}
+};
+
+export default LiquidCaterersHero;

@@ -1,53 +1,87 @@
-"use client";
-import React from "react";
+import React from 'react';
 
-const cocktails = [
+const events = [
   {
-    name: "Take Five",
-    price: "20$",
-    image: "/food1.jpeg",
+    id: 1,
+    title: "YOUNG BAE & BOYS",
+    type: "COCKTAIL PARTY",
+    date: "Thursday, 10 Apr at 12:00pm",
+    image: "https://images.unsplash.com/photo-1470225620780-dba8ba36b745?auto=format&fit=crop&q=80&w=600",
   },
   {
-    name: "Take Five",
-    price: "20$",
-    image: "/food2.jpeg",
+    id: 2,
+    title: "THE RED PARTY",
+    type: "COCKTAIL PARTY",
+    date: "Friday, 18 Jul at 12:00pm",
+    image: "https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?auto=format&fit=crop&q=80&w=600",
   },
   {
-    name: "Take Five",
-    price: "20$",
-    image: "/rotto.png",
+    id: 3,
+    title: "THE NIGHT SPRITZ",
+    type: "COCKTAIL PARTY",
+    date: "Friday, 21 Mar at 12:00pm",
+    image: "https://images.unsplash.com/photo-1551024709-8f23befc6f87?auto=format&fit=crop&q=80&w=600",
+  },
+  {
+    id: 4,
+    title: "THE SINGLES NIGHT",
+    type: "COCKTAIL PARTY",
+    date: "Friday, 15 Aug at 03:30pm",
+    image: "8.jpg",
   },
 ];
 
-export default function Cocktails() {
+const EventCard = ({ event }) => (
+  <div className="flex flex-col items-center group cursor-pointer">
+    {/* Image Container */}
+    <div className="relative w-full aspect-4/5 mb-8">
+      <div className="w-full h-full overflow-hidden rounded-md">
+        <img
+          src={event.image}
+          alt={event.title}
+          className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+        />
+      </div>
+
+      {/* Split Label: Half in, Half out */}
+      <div className="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2 z-10">
+        <div className="bg-white dark:bg-black px-6 py-2 shadow-xl border border-gray-100 dark:border-gray-700">
+          <p className="text-[10px] font-bold tracking-[0.2em] text-black dark:text-white whitespace-nowrap">
+            {event.type}
+          </p>
+        </div>
+      </div>
+    </div>
+
+    {/* Text Content */}
+    <div className="text-center mt-2">
+      <h3 className="text-black dark:text-white text-lg font-semibold tracking-wider mb-1 uppercase">
+        {event.title}
+      </h3>
+      <p className="text-gray-500 dark:text-gray-400 text-xs tracking-tight">
+        {event.date}
+      </p>
+    </div>
+  </div>
+);
+
+const UpcomingEvents = () => {
   return (
-    <section className="relative bg-black min-h-screen px-6 md:px-16 py-20">
-      
-      {/* Background Title */}
-      <h1 className="absolute top-12 left-6 md:left-16 text-[60px] md:text-[100px] font-serif tracking-widest text-white/10 uppercase leading-none">
-        Groove <br /> cocktails
-      </h1>
+    <section className="bg-white dark:bg-black py-16 px-4 sm:px-8 lg:px-16 min-h-screen transition-colors duration-500">
+      <div className="max-w-7xl mx-auto">
+        <h2 className="text-black dark:text-white text-2xl md:text-3xl font-light tracking-[0.3em] text-center mb-16 uppercase">
+          Upcoming Events
+        </h2>
 
-      {/* Drinks */}
-      <div className="relative z-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-16 mt-32 text-center">
-        {cocktails.map((item, index) => (
-          <div key={index} className="flex flex-col items-center">
-            <img
-              src={item.image}
-              alt={item.name}
-              className="h-64 md:h-72 object-contain mb-8"
-            />
-
-            <h3 className="text-white font-serif text-xl tracking-wide">
-              {item.name}
-            </h3>
-
-            <p className="text-white font-serif text-2xl mt-1">
-              {item.price}
-            </p>
-          </div>
-        ))}
+        {/* Responsive Grid: 1 col on mobile, 2 on tablet, 4 on desktop */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-16">
+          {events.map((event) => (
+            <EventCard key={event.id} event={event} />
+          ))}
+        </div>
       </div>
     </section>
   );
-}
+};
+
+export default UpcomingEvents;
