@@ -36,10 +36,10 @@ export default function Navbar() {
   };
 
   const menuLinks = [
-    { title: "HOME", href: "#home" },
-    { title: "MENU", href: "#menu" },
+    { title: "HOME", href: "/#home" },
+    { title: "MENU", href: "/#menu" },
     { title: "ALINO NIGHT LIFE", href: "/alino-night" },
-    { title: "CONTACT US", href: "#contact" },
+    { title: "CONTACT US", href: "/#contact" },
   ];
 
   const smallLinks = [
@@ -120,6 +120,7 @@ export default function Navbar() {
                     <a
                       key={link.title}
                       href={link.href}
+                      onClick={() => setIsMenuOpen(false)}
                       className="block text-gray-400 hover:text-white transition-colors"
                     >
                       {link.title}
