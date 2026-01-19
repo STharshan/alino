@@ -38,7 +38,7 @@ const MenuItem = ({ name, price, description }) => (
 
 const MenuSection = () => {
   return (
-    <section className="bg-white dark:bg-black min-h-screen flex flex-col lg:flex-row transition-colors duration-500">
+    <section id='menu' className="bg-white scroll-m-20 dark:bg-black min-h-screen flex flex-col lg:flex-row transition-colors duration-500">
       {/* Left Content Area */}
       <div className="w-full lg:w-1/2 flex flex-col justify-center px-8 py-16 sm:px-16 lg:px-24">
         <h2 className="text-black dark:text-white text-xl md:text-2xl font-semibold tracking-[0.2em] mb-16 uppercase">

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const LiquidCaterersHero = () => {
   return (
@@ -16,17 +17,16 @@ const LiquidCaterersHero = () => {
             </h1>
 
             <p className="text-gray-700 dark:text-gray-400 text-sm md:text-base leading-relaxed max-w-lg mx-auto lg:mx-0">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              tempor incididunt ut labore et dolore magna aliqua. Arcu felis
-              bibendum ut tristique et egestas quis ipsum suspendisse.
-              Adipiscing at in tellus integer feugiat blandit massa enim.
+              At Alino, the bar is the heartbeat of the night. Infused with African spirit and global flair, our liquid creations fuel the music, the energy, and the unforgettable moments. Expect bold flavours, flawless pours, and a nightlife experience that keeps the vibe alive till late.
             </p>
-
             <div className="pt-4">
-              <button className="border border-black/40 dark:border-white/40 px-10 py-3 uppercase tracking-widest text-xs font-semibold 
-                hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-[#050c18] transition-all duration-300">
+              <Link
+                to="/alino-night#menu"
+                className="border border-black/40 dark:border-white/40 px-10 py-3 uppercase tracking-widest text-xs font-semibold 
+    hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-[#050c18] transition-all duration-300"
+              >
                 Discover Cocktail
-              </button>
+              </Link>
             </div>
           </div>
 

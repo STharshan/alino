@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { ChevronLeft, ChevronRight, Heart, ShoppingCart } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 export default function CocktailBarCarousel() {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -9,30 +10,30 @@ export default function CocktailBarCarousel() {
     {
       id: 1,
       image: '3.jpg',
-      title: 'Club 54 & Coctail Bar',
-      address: '57 Rue du Maréchal Joffre, 16130 Nice, France',
-      hours: 'Mon / Sat - 09:00am to 23:00pm'
+      title: 'ALINO',
+      address: '11 Narborough Rd, Leicester LE3 0LE, United Kingdom',
+      hours: 'Mon - Closed Tus/Thu - 1pm to 1pm Fri-1pm to 2am Sat-2pm to 2am Sun-2pm to 1 am'
     },
     {
       id: 2,
       image: '8.jpg',
-      title: 'Classic Cocktails',
-      address: '57 Rue du Maréchal Joffre, 16130 Nice, France',
-      hours: 'Mon / Sat - 09:00am to 23:00pm'
+      title: 'ALINO',
+      address: '11 Narborough Rd, Leicester LE3 0LE, United Kingdom',
+       hours: 'Mon - Closed Tus/Thu - 1pm to 1pm Fri-1pm to 2am Sat-2pm to 2am Sun-2pm to 1 am'
     },
     {
       id: 3,
       image: 'alino.jpg',
-      title: 'Premium Selection',
-      address: '57 Rue du Maréchal Joffre, 16130 Nice, France',
-      hours: 'Mon / Sat - 09:00am to 23:00pm'
+      title: 'ALINO',
+      address: '11 Narborough Rd, Leicester LE3 0LE, United Kingdom',
+       hours: 'Mon - Closed Tus/Thu - 1pm to 1pm Fri-1pm to 2am Sat-2pm to 2am Sun-2pm to 1 am'
     },
     {
       id: 4,
       image: '12.jpg',
-      title: 'Signature Drinks',
-      address: '57 Rue du Maréchal Joffre, 16130 Nice, France',
-      hours: 'Mon / Sat - 09:00am to 23:00pm'
+      title: 'ALINO',
+      address: '11 Narborough Rd, Leicester LE3 0LE, United Kingdom',
+       hours: 'Mon - Closed Tus/Thu - 1pm to 1pm Fri-1pm to 2am Sat-2pm to 2am Sun-2pm to 1 am'
     }
   ];
 
@@ -115,14 +116,15 @@ export default function CocktailBarCarousel() {
           {slides[currentSlide].hours}
         </p>
 
-        <button
+        <Link
+          to="/alino-night#contact"
           className={`bg-transparent border-2 border-white text-white px-8 md:px-12 py-3 md:py-4 text-sm md:text-base uppercase tracking-widest hover:bg-white hover:text-gray-900 transition-all duration-300 ${
             isTransitioning ? 'opacity-0 translate-y-4' : 'opacity-100 translate-y-0'
           }`}
           style={{ transitionDelay: '200ms' }}
         >
           Reservation
-        </button>
+        </Link>
       </div>
 
 

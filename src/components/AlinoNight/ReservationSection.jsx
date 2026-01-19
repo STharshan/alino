@@ -10,13 +10,13 @@ const ReservationSection = () => {
 
     const handleWhatsAppRedirect = (e) => {
         e.preventDefault();
-        const phoneNumber = "1234567890"; 
-        
+        const phoneNumber = "1234567890";
+
         const message = `Hello, I'd like to make a reservation:%0A` +
-                        `- Guests: ${formData.guests}%0A` +
-                        `- Date: ${formData.date}%0A` +
-                        `- Time: ${formData.time}%0A` +
-                        `- Preferred Cocktails: ${formData.cocktails || 'Not specified'}`;
+            `- Guests: ${formData.guests}%0A` +
+            `- Date: ${formData.date}%0A` +
+            `- Time: ${formData.time}%0A` +
+            `- Preferred Cocktails: ${formData.cocktails || 'Not specified'}`;
 
         window.open(`https://wa.me/${phoneNumber}?text=${message}`, '_blank');
     };
@@ -26,7 +26,7 @@ const ReservationSection = () => {
     };
 
     return (
-        <section className="bg-white dark:bg-black text-black dark:text-white min-h-screen flex items-center transition-colors duration-500">
+        <section id="contact" className="bg-white scroll-m-20 dark:bg-black text-black dark:text-white min-h-screen flex items-center transition-colors duration-500">
             <div className="container mx-auto px-6 py-20">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
 
@@ -44,21 +44,46 @@ const ReservationSection = () => {
                         <h2 className="text-2xl md:text-3xl font-bold tracking-widest uppercase mb-4">
                             Make a Reservation
                         </h2>
-                        
+
                         <form onSubmit={handleWhatsAppRedirect} className="space-y-8 mt-12">
-                            {/* Guests Input */}
+                            {/* Guests Dropdown */}
                             <div className="relative border-b border-gray-300 dark:border-gray-600 focus-within:border-black dark:focus-within:border-white transition-colors">
-                                <label className="block text-[10px] uppercase tracking-widest text-gray-500 dark:text-gray-400 mb-1">Guests</label>
-                                <input
-                                    type="text"
+                                <label className="block text-[10px] uppercase tracking-widest text-gray-500 dark:text-gray-400 mb-1">
+                                    Guests
+                                </label>
+
+                                <select
                                     name="guests"
                                     value={formData.guests}
                                     onChange={handleChange}
-                                    className="bg-transparent w-full pb-2 outline-none text-sm placeholder-gray-400 dark:placeholder-gray-500"
-                                />
+                                    className="bg-transparent w-full pb-2 outline-none text-sm cursor-pointer appearance-none
+               text-black dark:text-white"
+                                >
+                                    <option value="1 Person" className="text-black bg-white dark:bg-black dark:text-white">
+                                        1 Person
+                                    </option>
+                                    <option value="2 Persons" className="text-black bg-white dark:bg-black dark:text-white">
+                                        2 Persons
+                                    </option>
+                                    <option value="3 Persons" className="text-black bg-white dark:bg-black dark:text-white">
+                                        3 Persons
+                                    </option>
+                                    <option value="4 Persons" className="text-black bg-white dark:bg-black dark:text-white">
+                                        4 Persons
+                                    </option>
+                                    <option value="5 Persons" className="text-black bg-white dark:bg-black dark:text-white">
+                                        5 Persons
+                                    </option>
+                                    <option value="6 Persons" className="text-black bg-white dark:bg-black dark:text-white">
+                                        6 Persons
+                                    </option>
+                                    <option value="More" className="text-black bg-white dark:bg-black dark:text-white">
+                                        More
+                                    </option>
+                                </select>
                             </div>
 
-                            {/* Date Picker */}
+                           {/* Date Picker */}
                             <div className="relative border-b border-gray-300 dark:border-gray-600 focus-within:border-black dark:focus-within:border-white transition-colors">
                                 <label className="block text-[10px] uppercase tracking-widest text-gray-500 dark:text-gray-400 mb-1">Select Date</label>
                                 <input
