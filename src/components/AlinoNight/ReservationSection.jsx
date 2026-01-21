@@ -52,24 +52,10 @@ export default function Contact() {
                         className="absolute inset-0 bg-cover bg-center"
                         style={{
                             backgroundImage:
-                                "url('https://images.unsplash.com/photo-1552566626-52f8b828add9?q=80&w=2070&auto=format&fit=crop')",
+                                "url('/night.jpeg')",
                         }}
                     />
-                    <div className="absolute inset-0 bg-linear-to-t from-black via-black/40 to-black/60" />
-
-                    <div className="relative h-full flex flex-col items-center justify-center text-center px-6">
-                        <span className="text-[#007A4D] font-bold tracking-[0.4em] uppercase text-xs mb-4">
-                            Reservations
-                        </span>
-                        <h2 className="text-5xl md:text-6xl lg:text-7xl uppercase leading-tight text-white">
-                            Book <br /> via <br />
-                            <span className="text-[#007A4D]">WhatsApp</span>
-                        </h2>
-                        <div className="h-1 w-16 bg-[#007A4D] my-6"></div>
-                        <p className="text-gray-300 text-sm italic max-w-xs">
-                            Alino, Authentic African Cuisine & Bar
-                        </p>
-                    </div>
+                    <div className="absolute inset-0 bg-black/60" />
                 </div>
 
                 {/* FORM */}
@@ -170,7 +156,7 @@ export default function Contact() {
                             </div>
                         </div>
                     </form>
-                        <p className="text-xs text-center mt-5">By submitting this form, you agree to us processing your details to respond to your enquiry. Your information is handled securely and in line with our Privacy Policy.</p>
+                    <p className="text-xs text-center mt-5">By submitting this form, you agree to us processing your details to respond to your enquiry. Your information is handled securely and in line with our Privacy Policy.</p>
                 </div>
             </div>
         </section>
