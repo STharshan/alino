@@ -161,7 +161,7 @@ export default function Navbar() {
             <div className="hidden lg:block lg:w-1/2 relative">
               <div className="absolute inset-0 bg-linear-to-l from-transparent to-[#090402] z-10" />
               <img
-                src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800&q=80"
+                src="/menu-image.png"
                 alt="Fine Dining"
                 className="w-full h-full object-cover"
               />
