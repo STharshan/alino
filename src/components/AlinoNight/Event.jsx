@@ -22,8 +22,8 @@ const LiquidCaterersHero = () => {
             <div className="pt-4">
               <Link
                 to="/alino-night#menu"
-                className="border border-black/40 dark:border-white/40 px-10 py-3 uppercase tracking-widest text-xs font-semibold 
-    hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-[#050c18] transition-all duration-300"
+                className="border border-black/40 rounded-lg dark:border-white/40 px-10 py-3 uppercase tracking-widest text-xs font-semibold 
+     hover:text-white hover:bg-[#FFB612] dark:hover:text-[#050c18] transition-all duration-300"
               >
                 Discover Cocktail
               </Link>

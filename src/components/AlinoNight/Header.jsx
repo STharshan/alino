@@ -23,7 +23,7 @@ export default function CocktailBarCarousel() {
       <div className="relative z-10  flex flex-col items-center justify-center h-full px-4 text-center">
         <Link
           to="/alino-night#contact"
-          className={`border-2 border-white rounded-xl text-white px-10 py-4 uppercase tracking-widest hover:bg-white hover:text-black transition-all duration-300 translate-y-4'
+          className={`border-2 border-white rounded-xl text-white px-10 py-4 uppercase tracking-widest hover:bg-[#FFB612] hover:text-black transition-all duration-300 translate-y-4'
             : 'opacity-100 translate-y-0'
             }`}
           style={{ transitionDelay: '200ms' }}
