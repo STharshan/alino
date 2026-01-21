@@ -9,21 +9,21 @@ export default function DelightfulExperience() {
   const services = [
     {
       icon: <MdFreeBreakfast className="text-[#007A4D]" />,
-      video: "https://player.vimeo.com/video/1152285441?autoplay=1&loop=1&muted=1&background=1",
+      video: "/v1.mp4",
       title: "A Decade of Passion & Flavor",
       description:
         "For over a decade, Alino African Restaurant has been Leicester's destination for authentic African cuisine. Our story began with a unique blend of passions—Alino's love for music and entertainment from his years traveling the country as a DJ, and his wife's deep passion for the culinary arts.",
     },
     {
       icon: <FaUtensils className="text-[#007A4D]" />,
-      video: "https://player.vimeo.com/video/1152292034?autoplay=1&loop=1&muted=1&background=1",
+      video: "/v2.mp4",
       title: "Creating an Extraordinary Dining Experience",
       description:
         "Together, they created something extraordinary: a dining experience that brings the rhythm and soul of Africa to every plate. We import our ingredients directly from the motherland, ensuring the most authentic and vibrant flavors in every dish.",
     },
     {
       icon: <FaMusic className="text-[#007A4D]" />,
-      video: "https://player.vimeo.com/video/1152284748?autoplay=1&loop=1&muted=1&background=1",
+      video: "/v3.mp4",
       title: "A Celebration of African Cultures",
       description:
         "Our cuisine is a celebration—a blend of cultures and tastes from across Africa, crafted by chefs from diverse backgrounds who share one vision: to bring you the best and most authentic African dining experience.",
@@ -82,15 +82,14 @@ export default function DelightfulExperience() {
             >
               <div className="rounded-2xl overflow-hidden transition-all duration-500 h-[520px] flex flex-col border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900 shadow-[0_10px_30px_rgba(0,0,0,0.1)] dark:shadow-[0_10px_30px_rgba(0,0,0,0.5)] hover:shadow-[0_12px_40px_rgba(221,182,78,0.3)] dark:hover:shadow-[0_12px_40px_rgba(255,215,0,0.25)]">
                 <div className="relative h-60 overflow-hidden">
-                  <div className="absolute inset-0">
-                    <iframe
-                      src={`${s.video}&autopause=0`}
-                      className="absolute inset-0 w-full h-full"
-                      frameBorder="0"
-                      allow="autoplay; fullscreen; picture-in-picture"
-                      allowFullScreen
-                    />
-                  </div>
+                  <video
+                    src={s.video}
+                    className="absolute inset-0 w-full h-full object-cover"
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                  />
 
                   <span className="absolute top-3 left-3 z-10 text-xs font-medium px-3 py-1 rounded-md flex items-center gap-1 shadow-sm bg-white text-[#007A4D] dark:bg-gray-800 dark:text-[#00FF8C]">
                     {s.icon}
