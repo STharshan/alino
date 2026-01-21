@@ -3,17 +3,17 @@ import React from 'react';
 const menuItems = [
   {
     name: "FROZEN MARGARITA",
-    price: "$50.00",
+    price: "£00.00",
     description: "tequila, cointreau - triple sec, lime juice, sugar syrup, large ice cubes, wedge of lime",
   },
   {
     name: "BERRY DAIQUIRI",
-    price: "$35.00",
+    price: "£00.00",
     description: "raspberry juice, ice, rum, lime juice, sugar syrup, slices of limes, whole strawberries",
   },
   {
     name: "PIÑA COLADA",
-    price: "$15.00",
+    price: "£00.00",
     description: "pineapple juice, malibu, coconut cream, wedge of pineapple, coconut flakes, ice cubes",
   },
 ];

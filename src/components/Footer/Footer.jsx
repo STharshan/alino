@@ -32,8 +32,7 @@ const Footer = () => {
             <li>
               <a
                 href="#home"
-                className="transition hover:text-[#007A4D]"
-                style={{ color: "#FFFFFF" }}
+                className="transition hover:text-[#007A4D]  text-[#E5E5E5]"
               >
                 Home
               </a>
@@ -41,8 +40,7 @@ const Footer = () => {
             <li>
               <a
                 href="#about"
-                className="transition hover:text-[#007A4D]"
-                style={{ color: "#FFFFFF" }}
+                className="transition hover:text-[#007A4D] text-[#E5E5E5]"
               >
                 About
               </a>
@@ -50,8 +48,7 @@ const Footer = () => {
             <li>
               <a
                 href="#menu"
-                className="transition hover:text-[#007A4D]"
-                style={{ color: "#FFFFFF" }}
+                className="transition hover:text-[#007A4D] text-[#E5E5E5]"
               >
                 Menu
               </a>
@@ -59,8 +56,7 @@ const Footer = () => {
             <li>
               <a
                 href="#contact"
-                className="transition hover:text-[#007A4D]"
-                style={{ color: "#FFFFFF" }}
+                className="transition hover:text-[#007A4D] text-[#E5E5E5]"
               >
                 Contact
               </a>
@@ -81,7 +77,8 @@ const Footer = () => {
               href="https://maps.app.goo.gl/X9MaGHdrdnypXHje6"
               target="_blank"
               rel="noopener noreferrer"
-              style={{ color: "#E5E5E5", textDecoration: "none" }}
+              className="hover:text-gray-300 text-[#E5E5E5]"
+              style={{  textDecoration: "none" }}
             >
               11 Narborough Rd, Leicester LE3 0LE, <br /> United Kingdom
             </a>
@@ -90,7 +87,8 @@ const Footer = () => {
           <p style={{ color: "#E5E5E5" }}>
             <a
               href="tel:+441162222153"
-              style={{ color: "#E5E5E5", textDecoration: "none" }}
+              className="hover:text-gray-300 text-[#E5E5E5]"
+              style={{ textDecoration: "none" }}
             >
               +44 116 222 2153
             </a>
@@ -98,8 +96,9 @@ const Footer = () => {
 
           <p style={{ color: "#E5E5E5" }}>
             <a
+            className="hover:text-gray-300 text-[#E5E5E5]"
               href="mailto:alinoltd@gmail.com"
-              style={{ color: "#E5E5E5", textDecoration: "none" }}
+              style={{  textDecoration: "none" }}
             >
               alinoltd@gmail.com
             </a>

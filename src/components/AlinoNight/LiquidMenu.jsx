@@ -4,25 +4,25 @@ import React from "react";
 const cocktails = [
   {
     name: "CLOVER CLUB",
-    price: "$25.00",
+    price: "£00.00",
     description:
       "lemongrass infused russian standard platinum vodka, lime, jasmin green tea & matcha soda",
   },
   {
     name: "VIEUX CARRÉ",
-    price: "$35.00",
+    price: "£00.00",
     description:
       "dickel rye whiskey, cognac, sweet vermouth, benedictine liqueur, aromatic bitters, lemon",
   },
   {
     name: "WHITE LADY",
-    price: "$45.00",
+    price: "£00.00",
     description:
       "orange liqueur, lemon juice, egg white, lemon peel powder, ice cubes with lemongrass & gin",
   },
   {
     name: "OLD FASHIONED",
-    price: "$15.00",
+    price: "£00.00",
     description:
       "sugar, angostura bitters, water, bourbon / rye whiskey, ice cubes & fresh orange twists",
   },
