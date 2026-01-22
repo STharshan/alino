@@ -8,6 +8,10 @@ import ReviewsSection from "../components/AlinoNight/TextScroll";
 import ReservationSection from "../components/AlinoNight/ReservationSection";
 import MenuSection from "../components/AlinoNight/MenuSection";
 import LiquidMenu from "../components/AlinoNight/LiquidMenu";
+import SpritMenu from "../components/AlinoNight/SpritMenu";
+import VodkaSection from "../components/AlinoNight/VodkaMenu";
+import WineSection from "../components/AlinoNight/Wine";
+import CreamSection from "../components/AlinoNight/Cream";
 
 const AlinoNight = () => {
   const location = useLocation();
@@ -34,6 +38,10 @@ const AlinoNight = () => {
       {/* <Cocktails /> */}
       <MenuSection />
       <LiquidMenu />
+      <SpritMenu />
+      <VodkaSection />
+      <WineSection />
+      <CreamSection />
     </div>
   );
 };

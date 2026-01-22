@@ -3,36 +3,12 @@ import React from "react";
 
 const cocktails = [
   {
-    "name": "Trophy",
-    "price": "£8"
-  },
-  {
-    "name": "Star",
-    "price": "£6"
-  },
-  {
-    "name": "Goldberg",
-    "price": "£6"
-  },
-  {
-    "name": "Palm Wine",
-    "price": "£6"
-  },
-  {
-    "name": "Large Guinness",
-    "price": "£10"
-  },
-  {
-    "name": "Small Guinness",
-    "price": "£5"
-  },
-  {
-    "name": "Tusker",
-    "price": "£6"
+    "name": "Baileys",
+    "price": "£4"
   }
 ];
 
-const CocktailMenu = () => {
+const CreamSection = () => {
   return (
     <section className="bg-white dark:bg-black text-black dark:text-white py-20 px-4 md:px-16 transition-colors duration-500">
       <div className="flex flex-col lg:flex-row items-center lg:items-start gap-8">
@@ -41,7 +17,7 @@ const CocktailMenu = () => {
           <img
             src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?auto=format&fit=crop&q=80&w=600"
             alt="Cheers"
-            className="w-full h-120 rounded-lg shadow-lg object-cover"
+            className="w-full h-50 rounded-lg shadow-lg object-cover"
           />
         </div>
 
@@ -50,14 +26,14 @@ const CocktailMenu = () => {
           <img
             src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?auto=format&fit=crop&q=80&w=600"
             alt="Cocktails"
-            className="w-full h-120 rounded-lg shadow-lg object-cover"
+            className="w-full h-50 rounded-lg shadow-lg object-cover"
           />
         </div>
 
         {/* Right Menu */}
         <div className="w-full lg:w-1/3 flex flex-col gap-6">
           <h2 className="text-black dark:text-white text-xl md:text-2xl font-semibold tracking-[0.2em] mb-5 uppercase">
-            AFRICAN BEERS
+            CREAM
           </h2>
           {cocktails.map((item) => (
             <div
@@ -77,4 +53,4 @@ const CocktailMenu = () => {
   );
 };
 
-export default CocktailMenu;
+export default CreamSection;
