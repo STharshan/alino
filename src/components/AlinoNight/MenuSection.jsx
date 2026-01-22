@@ -1,24 +1,25 @@
 import React from 'react';
 
 const menuItems = [
-  { "name": "Large Heineken", "price": "£6" },
-  { "name": "Small Heineken", "price": "£3" },
-  { "name": "Heineken Can", "price": "£4" },
-  { "name": "Large Stella", "price": "£6" },
-  { "name": "Small Stella", "price": "£3" },
-  { "name": "Stella Can", "price": "£4" },
-  { "name": "Corona", "price": "£4" },
-  { "name": "Large Budweiser", "price": "£6" },
-  { "name": "Small Budweiser", "price": "£3" },
-  { "name": "Smirnoff Ice", "price": "£4" },
-  { "name": "Foster", "price": "£4" },
-  { "name": "Strongbow", "price": "£4" },
-  { "name": "Desperado", "price": "£4" },
-  { "name": "Carling", "price": "£4" },
-  { "name": "Jack Daniel’s Can", "price": "£5" },
-  { "name": "Koppenberg", "price": "£5" },
-  { "name": "Bulmers", "price": "£5" }
+  { name: "Large Heineken", price: "6.00" },
+  { name: "Small Heineken", price: "3.00" },
+  { name: "Heineken Can", price: "4.00" },
+  { name: "Large Stella", price: "6.00" },
+  { name: "Small Stella", price: "3.00" },
+  { name: "Stella Can", price: "4.00" },
+  { name: "Corona", price: "4.00" },
+  { name: "Large Budweiser", price: "6.00" },
+  { name: "Small Budweiser", price: "3.00" },
+  { name: "Smirnoff Ice", price: "4.00" },
+  { name: "Foster", price: "4.00" },
+  { name: "Strongbow", price: "4.00" },
+  { name: "Desperado", price: "4.00" },
+  { name: "Carling", price: "4.00" },
+  { name: "Jack Daniels Can", price: "5.00" },
+  { name: "Koppenberg", price: "5.00" },
+  { name: "Bulmers", price: "5.00" }
 ];
+
 
 const MenuItem = ({ name, price, description }) => (
   <div className="mb-10 group">
@@ -29,12 +30,9 @@ const MenuItem = ({ name, price, description }) => (
       {/* Decorative Line */}
       <div className="flex-1 border-b border-gray-300 dark:border-gray-600 mb-1 opacity-50 group-hover:opacity-100 transition-opacity"></div>
       <span className="text-black dark:text-white font-medium tabular-nums">
-        {price}
+        £{price}
       </span>
     </div>
-    <p className="text-gray-600 dark:text-gray-400 text-sm mt-2 leading-relaxed max-w-md">
-      {description}
-    </p>
   </div>
 );
 
@@ -62,17 +60,6 @@ const MenuSection = () => {
           className="w-full h-full object-cover"
         />
 
-        {/* Floating Side Action Icons */}
-        <div className="absolute right-0 top-1/2 -translate-y-1/2 flex flex-col gap-2">
-          <button className="bg-[#ff2d55] p-3 text-white shadow-md hover:opacity-90 transition-opacity">
-            <span className="sr-only">Social</span>
-            <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" /></svg>
-          </button>
-          <button className="bg-white dark:bg-gray-800 p-3 text-black dark:text-white shadow-md hover:opacity-90 transition-opacity">
-            <span className="sr-only">Cart</span>
-            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" /></svg>
-          </button>
-        </div>
       </div>
     </section>
   );

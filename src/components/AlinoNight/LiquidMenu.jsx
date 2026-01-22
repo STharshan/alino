@@ -3,34 +3,35 @@ import React from "react";
 
 const cocktails = [
   {
-    "name": "Trophy",
-    "price": "£8"
+    name: "Trophy",
+    price: "8.00"
   },
   {
-    "name": "Star",
-    "price": "£6"
+    name: "Star",
+    price: "6.00"
   },
   {
-    "name": "Goldberg",
-    "price": "£6"
+    name: "Goldberg",
+    price: "6.00"
   },
   {
-    "name": "Palm Wine",
-    "price": "£6"
+    name: "Palm Wine",
+    price: "6.00"
   },
   {
-    "name": "Large Guinness",
-    "price": "£10"
+    name: "Large Guinness",
+    price: "10.00"
   },
   {
-    "name": "Small Guinness",
-    "price": "£5"
+    name: "Small Guinness",
+    price: "5.00"
   },
   {
-    "name": "Tusker",
-    "price": "£6"
+    name: "Tusker",
+    price: "6.00"
   }
 ];
+
 
 const CocktailMenu = () => {
   return (
@@ -62,11 +63,11 @@ const CocktailMenu = () => {
           {cocktails.map((item) => (
             <div
               key={item.name}
-              className="border-b border-gray-300 dark:border-gray-700 pb-4 transition-colors duration-500"
+              className="border-b uppercase border-gray-300 dark:border-gray-700 pb-4 transition-colors duration-500"
             >
               <div className="flex justify-between items-center">
                 <h3 className="text-lg font-bold">{item.name}</h3>
-                <span className="text-lg font-semibold">{item.price}</span>
+                <span className="text-lg font-semibold">£{item.price}</span>
               </div>
               <p className="text-gray-600 dark:text-gray-400 mt-2">{item.description}</p>
             </div>

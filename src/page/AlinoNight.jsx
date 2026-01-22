@@ -12,6 +12,7 @@ import SpritMenu from "../components/AlinoNight/SpritMenu";
 import VodkaSection from "../components/AlinoNight/VodkaMenu";
 import WineSection from "../components/AlinoNight/Wine";
 import CreamSection from "../components/AlinoNight/Cream";
+import JuiceSection from "../components/AlinoNight/Juice";
 
 const AlinoNight = () => {
   const location = useLocation();
@@ -42,6 +43,7 @@ const AlinoNight = () => {
       <VodkaSection />
       <WineSection />
       <CreamSection />
+      <JuiceSection />
     </div>
   );
 };

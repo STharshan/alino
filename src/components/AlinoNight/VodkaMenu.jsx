@@ -3,46 +3,47 @@ import React from "react";
 // Menu items with single and double prices
 const menuItems = [
   {
-    "name": "Sambuca",
-    "single": "£4",
-    "double": "£8"
+    name: "Sambuca",
+    single: 4.00,
+    double: 8.00
   },
   {
-    "name": "Smirnoff",
-    "single": "£4",
-    "double": "£8"
+    name: "Smirnoff",
+    single: 4.00,
+    double: 8.00
   },
   {
-    "name": "Ciroc",
-    "single": "£4",
-    "double": "£8"
+    name: "Ciroc",
+    single: 4.00,
+    double: 8.00
   },
   {
-    "name": "Bacardi",
-    "single": "£4",
-    "double": "£8"
+    name: "Bacardi",
+    single: 4.00,
+    double: 8.00
   },
   {
-    "name": "Gordons",
-    "single": "£4",
-    "double": "£8"
+    name: "Gordons",
+    single: 4.00,
+    double: 8.00
   },
   {
-    "name": "Grey Goose",
-    "single": "£4",
-    "double": "£8"
+    name: "Grey Goose",
+    single: 4.00,
+    double: 8.00
   },
   {
-    "name": "Belvedere",
-    "single": "£4",
-    "double": "£8"
+    name: "Belvedere",
+    single: 4.00,
+    double: 8.00
   },
   {
-    "name": "Absolut",
-    "single": "£4",
-    "double": "£8"
+    name: "Absolut",
+    single: 4.00,
+    double: 8.00
   }
-]
+];
+
 
 
 // Component for a single menu item
@@ -61,11 +62,11 @@ const MenuItem = ({ name, single, double }) => (
       <div className="flex gap-4 mt-1 sm:mt-0 text-black dark:text-white font-medium tabular-nums">
         <div className="flex flex-col items-center">
           <span className="text-xs font-semibold uppercase">Single</span>
-          <span>{single}</span>
+          <span>£{single}</span>
         </div>
         <div className="flex flex-col items-center">
           <span className="text-xs font-semibold uppercase">Double</span>
-          <span>{double}</span>
+          <span>£{double}</span>
         </div>
       </div>
     </div>

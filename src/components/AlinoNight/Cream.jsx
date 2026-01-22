@@ -4,7 +4,7 @@ import React from "react";
 const cocktails = [
   {
     "name": "Baileys",
-    "price": "£4"
+    "price": "£4.00"
   }
 ];
 
@@ -38,7 +38,7 @@ const CreamSection = () => {
           {cocktails.map((item) => (
             <div
               key={item.name}
-              className="border-b border-gray-300 dark:border-gray-700 pb-4 transition-colors duration-500"
+              className="border-b uppercase border-gray-300 dark:border-gray-700 pb-4 transition-colors duration-500"
             >
               <div className="flex justify-between items-center">
                 <h3 className="text-lg font-bold">{item.name}</h3>

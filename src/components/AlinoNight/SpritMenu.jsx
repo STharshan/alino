@@ -2,14 +2,15 @@ import React from 'react';
 
 // Menu items with single and double prices
 const menuItems = [
-  { name: "Courvoisier", single: "£4", double: "£8" },
-  { name: "Hennessy", single: "£4", double: "£8" },
-  { name: "Glenfiddich", single: "£4", double: "£8" },
-  { name: "Black Label", single: "£4", double: "£8" },
-  { name: "Famous Grouse", single: "£4", double: "£8" },
-  { name: "Jack Daniels", single: "£4", double: "£8" },
-  { name: "Captain Morgan Original", single: "£4", double: "£8" }
+  { name: "Courvoisier", single: "4.00", double: "8.00" },
+  { name: "Hennessy", single: "4.00", double: "8.00" },
+  { name: "Glenfiddich", single: "4.00", double: "8.00" },
+  { name: "Black Label", single: "4.00", double: "8.00" },
+  { name: "Famous Grouse", single: "4.00", double: "8.00" },
+  { name: "Jack Daniels", single: "4.00", double: "8.00" },
+  { name: "Captain Morgan Original", single: "4.00", double: "8.00" }
 ];
+
 
 // Component for a single menu item
 const MenuItem = ({ name, single, double }) => (
@@ -27,11 +28,11 @@ const MenuItem = ({ name, single, double }) => (
       <div className="flex gap-4 mt-1 sm:mt-0 text-black dark:text-white font-medium tabular-nums">
         <div className="flex flex-col items-center">
           <span className="text-xs font-semibold uppercase">Single</span>
-          <span>{single}</span>
+          <span>£{single}</span>
         </div>
         <div className="flex flex-col items-center">
           <span className="text-xs font-semibold uppercase">Double</span>
-          <span>{double}</span>
+          <span>£{double}</span>
         </div>
       </div>
     </div>

@@ -2,9 +2,9 @@ import React from 'react';
 
 // Menu items with single and double prices
 const menuItems = [
-  { name: "Red", single: "£8", double: "£25" },
-  { name: "White", single: "£8", double: "£25" },
-  { name: "Rose", single: "£8", double: "£25" },
+  { name: "Red", single: "£8.00", double: "£25.00" },
+  { name: "White", single: "£8.00", double: "£25.00" },
+  { name: "Rose", single: "£8.00", double: "£25.00" },
  ];
 
 // Component for a single menu item
