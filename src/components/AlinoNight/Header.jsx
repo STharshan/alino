@@ -1,5 +1,4 @@
-import React, { useState } from 'react';
-import { ChevronLeft, ChevronRight } from 'lucide-react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 
 export default function CocktailBarCarousel() {
@@ -14,7 +13,10 @@ export default function CocktailBarCarousel() {
         loop
         muted
         playsInline
-      />
+        poster="/fall2.png"
+        onError={(e) => (e.currentTarget.style.display = "none")}
+      >
+      </video>
 
       {/* Dark Overlay */}
       <div className="absolute inset-0 bg-black/40" />

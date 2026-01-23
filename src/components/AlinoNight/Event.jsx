@@ -38,6 +38,7 @@ const LiquidCaterersHero = () => {
               <img
                 src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?auto=format&fit=crop&q=80&w=800"
                 alt="Bartender preparing drink"
+                loading="lazy"
                 className="w-full h-full object-cover grayscale brightness-75 transition-all duration-700 hover:grayscale-0"
               />
             </div>
@@ -47,6 +48,7 @@ const LiquidCaterersHero = () => {
               <img
                 src="https://images.unsplash.com/photo-1551024709-8f23befc6f87?auto=format&fit=crop&q=80&w=800"
                 alt="Finished cocktails"
+                loading="lazy"
                 className="w-full h-full object-cover"
               />
             </div>

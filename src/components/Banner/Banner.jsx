@@ -1,36 +1,13 @@
-"use client";
 import React, { useEffect } from "react";
 import BannerImg from "../../assets/2.png";
-import AOS from "aos";
-import "aos/dist/aos.css";
 import { Link } from "react-router-dom";
 
 const Banner = () => {
-  useEffect(() => {
-    AOS.init({
-      duration: 1000,
-      once: false,
-      mirror: true,
-      offset: 100,
-      easing: "ease-in-out",
-    });
-
-    const refreshTimer = setTimeout(() => {
-      AOS.refreshHard();
-    }, 300);
-
-    window.addEventListener("resize", AOS.refresh);
-
-    return () => {
-      clearTimeout(refreshTimer);
-      window.removeEventListener("resize", AOS.refresh);
-    };
-  }, []);
 
   return (
     <section
       className="relative py-20 lg:py-32 overflow-hidden"
-      style={{ backgroundColor: "#FFFFFF" }} // ✅ saved background color
+      style={{ backgroundColor: "#FFFFFF" }}
     >
       {/* Decorative linear overlay */}
       <div className="absolute inset-0 pointer-events-none bg-linear-to-r from-[#007A4D]/10 via-transparent to-[#FFB612]/10" />
@@ -46,6 +23,7 @@ const Banner = () => {
             <img
               src={BannerImg}
               alt="Delicious food on table"
+              loading="lazy"
               className="rounded-2xl w-full max-w-lg shadow-xl
                          transform transition duration-500 ease-out
                          hover:scale-105 hover:shadow-[0_0_35px_#007A4D]

@@ -1,5 +1,4 @@
-"use client";
-import React, { useState, useEffect } from "react";
+import React, { useState} from "react";
 import { MapPin, Phone } from "lucide-react";
 import { FaWhatsapp } from "react-icons/fa";
 

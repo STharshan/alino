@@ -63,6 +63,7 @@ export default function Navbar() {
             <img
               src="/logo.png"
               alt="Alino Logo"
+              loading="lazy"
               className="w-40 h-auto object-contain"
             />
 
@@ -163,6 +164,7 @@ export default function Navbar() {
               <img
                 src="/menu-image.png"
                 alt="Fine Dining"
+                loading="lazy"
                 className="w-full h-full object-cover"
               />
             </div>

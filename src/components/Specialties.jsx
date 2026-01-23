@@ -63,6 +63,7 @@ const Specialties = () => {
                 <img
                   src={item.img}
                   alt={item.title}
+                  loading="lazy"
                   className="w-64 h-64 object-cover rounded-full shadow-md
                              transition duration-500 ease-out
                              group-hover:scale-110"

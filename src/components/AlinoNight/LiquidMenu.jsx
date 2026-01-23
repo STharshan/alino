@@ -42,6 +42,7 @@ const CocktailMenu = () => {
           <img
             src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?auto=format&fit=crop&q=80&w=600"
             alt="Cheers"
+            loading="lazy"
             className="w-full h-120 rounded-lg shadow-lg object-cover"
           />
         </div>
@@ -51,6 +52,7 @@ const CocktailMenu = () => {
           <img
             src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?auto=format&fit=crop&q=80&w=600"
             alt="Cocktails"
+            loading="lazy"
             className="w-full h-120 rounded-lg shadow-lg object-cover"
           />
         </div>

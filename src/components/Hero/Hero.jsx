@@ -1,4 +1,3 @@
-"use client";
 import React, { useState } from "react";
 
 const Hero = () => {
@@ -37,14 +36,15 @@ const Hero = () => {
     <div className="relative w-full h-screen" id="home">
       {/* Background video */}
       <video
-        className="absolute top-0 left-0 w-full h-full object-cover -z-10"
+        className="absolute inset-0 w-full h-full object-cover"
+        src="/bg.mp4"
         autoPlay
         loop
         muted
         playsInline
+        poster="/fall.png"
+        onError={(e) => (e.currentTarget.style.display = "none")}
       >
-        <source src="/bg.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
       </video>
 
       {/* Dark/Light Overlay */}

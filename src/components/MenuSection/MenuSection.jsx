@@ -67,6 +67,7 @@ const CoverPage = forwardRef((props, ref) => (
       <img
         src="/menu-image.png"
         alt="Alino Welcome Background"
+        loading="lazy"
         className="w-full h-full object-cover object-center"
       />
       <div className="absolute inset-0 bg-black/30" />
@@ -102,6 +103,7 @@ const SectionPage = forwardRef(({ title, subtitle, items }, ref) => (
               <img
                 src={item.image}
                 alt={item.name}
+                loading="lazy"
                 className="h-16 w-16 sm:h-20 sm:w-20 rounded-lg object-cover shrink-0"
               />
             )}

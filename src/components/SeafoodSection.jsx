@@ -94,12 +94,14 @@ const SeafoodSection = () => {
           >
             <img
               src="/alino.jpg"
+              loading="lazy"
               alt="Dining Experience"
               className="rounded-2xl shadow-lg w-full h-[450px] object-cover"
             />
             {/* Slow rotating seafood plate */}
             <img
               src="/rotto.png"
+              loading="lazy"
               alt="Seafood Plate"
               className="absolute -bottom-10 -right-10 w-48 h-48 rounded-full"
               style={{

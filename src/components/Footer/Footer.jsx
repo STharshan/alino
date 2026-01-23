@@ -1,6 +1,6 @@
 // Footer.jsx
 import React from "react";
-import { FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa";
+import { FaFacebookF } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -112,15 +112,6 @@ const Footer = () => {
             >
               <FaFacebookF />
             </a>
-            {/* <a
-              href="https://instagram.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-[#007A4D] hover:bg-[#FFB612] text-white p-2 rounded-full transition transform hover:scale-110"
-            >
-              <FaInstagram />
-            </a> */}
-
           </div>
         </div>
       </div>
