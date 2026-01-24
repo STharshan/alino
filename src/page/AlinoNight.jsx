@@ -13,6 +13,7 @@ import VodkaSection from "../components/AlinoNight/VodkaMenu";
 import WineSection from "../components/AlinoNight/Wine";
 import CreamSection from "../components/AlinoNight/Cream";
 import JuiceSection from "../components/AlinoNight/Juice";
+import NightNavbar from "../components/AlinoNight/NightNavbar";
 
 const AlinoNight = () => {
   const location = useLocation();
@@ -32,11 +33,11 @@ const AlinoNight = () => {
 
   return (
     <div>
+      <NightNavbar />
       <Hero />
       <EventSection />
       <ReviewsSection />
       <ReservationSection />
-      {/* <Cocktails /> */}
       <MenuSection />
       <LiquidMenu />
       <SpritMenu />

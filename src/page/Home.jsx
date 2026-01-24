@@ -1,4 +1,5 @@
 import React from 'react'
+import Navbar from '../components/Navbar/Navbar'
 import Hero from '../components/Hero/Hero'
 import DelightfulExperience from '../components/DelightfulExperience'
 import SeafoodSection from '../components/SeafoodSection'
@@ -12,6 +13,7 @@ import ContactUs from '../components/ContactUs/ContactUs'
 const Home = () => {
     return (
         <div>
+            <Navbar />
             <Hero />
             <DelightfulExperience />
             <SeafoodSection />

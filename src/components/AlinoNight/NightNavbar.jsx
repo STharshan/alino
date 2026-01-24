@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { Menu, X, Phone } from "lucide-react";
 import ThemeToggle from "../ThemeToggle";
+import { Link } from "react-router-dom";
 
-export default function Navbar() {
+export default function NightNavbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
 
@@ -13,27 +14,6 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  /* Load GloriaFood Script ONCE */
-  const openReservation = () => {
-    // Load script once
-    if (!document.getElementById("glf-script")) {
-      const script = document.createElement("script");
-      script.src = "https://www.fbgcdn.com/embedder/js/ewm2.js";
-      script.async = true;
-      script.defer = true;
-      script.id = "glf-script";
-      document.body.appendChild(script);
-    }
-
-    // Trigger widget every click
-    const interval = setInterval(() => {
-      const btn = document.querySelector(".glf-button");
-      if (btn) {
-        btn.click();
-        clearInterval(interval);
-      }
-    }, 200);
-  };
 
   const menuLinks = [
     { title: "HOME", href: "/#" },
@@ -70,12 +50,12 @@ export default function Navbar() {
             {/* Right Actions */}
             <div className="flex items-center space-x-4">
               {/* Reservations Button */}
-              <button
-                onClick={openReservation}
+              <Link
+                to="/alino-night#contact"
                 className="hidden sm:block bg-[#FFB612] hover:bg-[#007A4D] text-white px-6 py-2.5 rounded-sm text-sm font-medium transition-colors"
               >
-                order online
-              </button>
+                Reservation
+              </Link>
 
               <ThemeToggle />
 
@@ -130,12 +110,12 @@ export default function Navbar() {
                 </div>
 
                 {/* Mobile Reservation Button */}
-                <button
-                  onClick={openReservation}
+                <Link
+                    to="/alino-night#contact"
                   className="w-auto bg-[#FFB612] hover:bg-[#007A4D] text-white text-sm px-4 py-2 mb-6 rounded transition"
                 >
-                  order online
-                </button>
+                   Reservation
+                </Link>
 
                 {/* Contact */}
                 <a
@@ -172,14 +152,6 @@ export default function Navbar() {
           {/* 🔹 HIDDEN WIDGET TRIGGER (REQUIRED) */}
         </div>
       </div>
-      <span
-        className="glf-button"
-        data-glf-cuid="090174fa-7049-49f3-8058-5195366e5e06"
-        data-glf-ruid="2e15d43c-f4d8-4c97-b8b5-ba72b7e75773"
-        style={{ display: "none" }}
-      >
-        Order
-      </span>
     </>
   );
 }

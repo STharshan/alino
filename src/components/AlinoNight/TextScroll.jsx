@@ -1,8 +1,8 @@
 import React from 'react';
 
 const CocktailMarquee = () => {
-  const cocktailsTop = ["FRENCH 75", "COSMOPOLITAN", "NEGRONI", "MARGARITA"];
-  const cocktailsBottom = ["DIRTY MARTINI", "WHITE LADY", "OLD FASHIONED", "MANHATTAN"];
+  const cocktailsTop = ["Alino", "Spirit Shots", "Beers", "Vodka"];
+  const cocktailsBottom = ["African Spirit", "African Juices", "Wine", "African Beers"];
 
   return (
     <section className="bg-white dark:bg-black py-12 overflow-hidden transition-colors duration-500">

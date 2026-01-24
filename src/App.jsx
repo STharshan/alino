@@ -3,7 +3,6 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
 import PrivacyPolicy from "./components/PrivacyPolicy";
 import TermsConditions from "./components/Term";
@@ -25,7 +24,6 @@ const App = () => {
 
   return (
     <Router>
-      <Navbar />
       <ScrollToTop />
 
       <Routes>

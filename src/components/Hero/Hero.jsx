@@ -33,7 +33,7 @@ const Hero = () => {
   };
 
   return (
-    <div className="relative w-full h-screen" id="home">
+    <div className="relative w-full h-screen" id="#">
       {/* Background video */}
       <video
         className="absolute inset-0 w-full h-full object-cover"
