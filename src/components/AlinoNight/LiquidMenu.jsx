@@ -40,7 +40,7 @@ const CocktailMenu = () => {
         {/* Left Image */}
         <div className="w-full lg:w-1/4 mt-20">
           <img
-            src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?auto=format&fit=crop&q=80&w=600"
+            src="n2.png"
             alt="Cheers"
             loading="lazy"
             className="w-full h-120 rounded-lg shadow-lg object-cover"
@@ -50,7 +50,7 @@ const CocktailMenu = () => {
         {/* Middle Image */}
         <div className="w-full lg:w-1/4">
           <img
-            src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?auto=format&fit=crop&q=80&w=600"
+            src="n4.jpg"
             alt="Cocktails"
             loading="lazy"
             className="w-full h-120 rounded-lg shadow-lg object-cover"

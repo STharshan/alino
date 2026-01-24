@@ -82,7 +82,7 @@ const VodkaSection = () => {
       {/* LEFT IMAGE SECTION */}
       <div className="w-full lg:w-1/2 h-[400px] lg:h-auto relative">
         <img
-          src="https://images.unsplash.com/photo-1551024709-8f23befc6f87?auto=format&fit=crop&q=80&w=1200"
+          src="n4.jpg"
           alt="Cocktails on table"
           loading="lazy"
           className="w-full h-full object-cover"

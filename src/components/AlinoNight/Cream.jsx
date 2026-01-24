@@ -16,7 +16,7 @@ const CreamSection = () => {
         <div className="w-full lg:w-1/4 mt-20">
           <img
             loading="lazy"
-            src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?auto=format&fit=crop&q=80&w=600"
+            src="n4.jpg"
             alt="Cheers"
             className="w-full h-50 rounded-lg shadow-lg object-cover"
           />
@@ -26,7 +26,7 @@ const CreamSection = () => {
         <div className="w-full lg:w-1/4">
           <img
             loading="lazy"
-            src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?auto=format&fit=crop&q=80&w=600"
+            src="n2.jpg"
             alt="Cocktails"
             className="w-full h-50 rounded-lg shadow-lg object-cover"
           />
