@@ -86,11 +86,11 @@ const Footer = () => {
 
           <p style={{ color: "#E5E5E5" }}>
             <a
-              href="tel:+441162222153"
+              href="tel:+447737098045"
               className="hover:text-gray-300 text-[#E5E5E5]"
               style={{ textDecoration: "none" }}
             >
-              +44 116 222 2153
+              07737098045
             </a>
           </p>
 

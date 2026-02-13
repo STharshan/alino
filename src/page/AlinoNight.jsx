@@ -2,7 +2,6 @@ import React, { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 
 import Hero from "../components/AlinoNight/Header";
-import Cocktails from "../components/AlinoNight/Cocktails";
 import EventSection from "../components/AlinoNight/Event";
 import ReviewsSection from "../components/AlinoNight/TextScroll";
 import ReservationSection from "../components/AlinoNight/ReservationSection";

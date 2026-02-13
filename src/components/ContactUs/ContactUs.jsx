@@ -150,10 +150,10 @@ ${message}
             <p className="mb-3 text-gray-700 dark:text-gray-300">
               <strong className="text-[#007A4D] dark:text-[#00FF8C]">Phone:</strong>{" "}
               <a
-                href="tel:+441162222153"
+                href="tel:+447737098045"
                 className="hover:underline"
               >
-                +44 116 222 2153
+                07737098045
               </a>
             </p>
 
