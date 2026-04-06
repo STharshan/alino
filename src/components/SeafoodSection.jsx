@@ -1,4 +1,3 @@
-import React from "react";
 import { FaFish, FaStore, FaUtensils } from "react-icons/fa";
 import { GiCrab } from "react-icons/gi";
 

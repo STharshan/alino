@@ -1,4 +1,3 @@
-import React, { useEffect } from "react";
 import BannerImg from "../../assets/2.png";
 import { Link } from "react-router-dom";
 

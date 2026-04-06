@@ -1,6 +1,5 @@
 import React from 'react';
 
-// Menu items with single and double prices
 const menuItems = [
   { name: "Courvoisier", single: "4.00", double: "8.00" },
   { name: "Hennessy", single: "4.00", double: "8.00" },

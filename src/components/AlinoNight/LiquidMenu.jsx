@@ -1,4 +1,3 @@
-// CocktailMenu.jsx
 import React from "react";
 
 const cocktails = [

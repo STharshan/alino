@@ -1,10 +1,9 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { FaUtensils, FaMusic } from "react-icons/fa";
 import { MdFreeBreakfast } from "react-icons/md";
 
 export default function DelightfulExperience() {
   const [activeIndex, setActiveIndex] = useState(0);
-  const [hovered, setHovered] = useState(false);
 
   const services = [
     {
@@ -70,8 +69,6 @@ export default function DelightfulExperience() {
         {/* Card Slider */}
         <div
           className="relative flex items-center justify-center h-[520px] overflow-visible"
-          onMouseEnter={() => setHovered(true)}
-          onMouseLeave={() => setHovered(false)}
         >
           {services.map((s, i) => (
             <div

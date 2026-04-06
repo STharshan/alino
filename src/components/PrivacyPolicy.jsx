@@ -1,12 +1,7 @@
-import React, { useEffect } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css"; // Import AOS styles
+import React from "react";
 
 const PrivacyPolicy = () => {
-  // Initialize AOS when the component mounts
-  useEffect(() => {
-    AOS.init({ duration: 1000 });
-  }, []);
+
 
   return (
     <div className="mx-auto px-4 py-12 sm:px-6 lg:px-16 bg-black text-white">

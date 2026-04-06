@@ -1,13 +1,7 @@
-import React, { useEffect } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css"; // Import AOS styles
+import React from "react";
 
 
 const TermsConditions = () => {
-  // Initialize AOS when the component mounts
-  useEffect(() => {
-    AOS.init({ duration: 1000 });
-  }, []);
 
   return (
     <section className="bg-black text-white mx-auto px-4 py-8">

@@ -1,6 +1,7 @@
-import React, { forwardRef, useMemo, useRef, useState } from "react";
+import { forwardRef, useMemo, useRef, useState } from "react";
 import HTMLFlipBook from "react-pageflip";
 import sectionsSeed from "./menu.json";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 
 // ---------- Brand Colors ----------
 const COLORS = {
@@ -51,10 +52,10 @@ const Page = forwardRef(({ children, className = "" }, ref) => (
     ref={ref}
     className={`relative h-full w-full overflow-hidden rounded-xl shadow-lg bg-white dark:bg-[#111A1D] ${className}`}
   >
-    {/* 🔹 Background overlay for all pages */}
+    {/* Background overlay for all pages */}
     <div className="absolute inset-0 bg-black/10 dark:bg-black/30 z-0 rounded-lg" />
 
-    {/* 🔹 Page content */}
+    {/* Page content */}
     <div className="relative z-10 h-full w-full p-4 sm:p-8 text-black dark:text-gray-200">{children}</div>
   </div>
 ));
@@ -222,18 +223,22 @@ export default function MenuFlipbook() {
           <div className="flex items-center gap-2">
             <button
               onClick={goPrev}
-              className="rounded-2xl border px-3 py-2 text-sm shadow-sm hover:bg-neutral-50 dark:hover:bg-gray-700 dark:text-gray-200"
+              aria-label="Previous page"
+              className="rounded-2xl border px-3 py-2 text-sm shadow-sm hover:bg-neutral-50 dark:hover:bg-gray-700 dark:text-gray-200 flex items-center justify-center"
             >
-              ◀ Prev
+              <ChevronLeft size={18} className="mr-1" /> Prev
             </button>
+
             <span className="text-sm tabular-nums select-none text-black dark:text-gray-200">
               {String(page + 1).padStart(2, "0")} / {String(pages.length).padStart(2, "0")}
             </span>
+
             <button
               onClick={goNext}
-              className="rounded-2xl border px-3 py-2 text-sm shadow-sm hover:bg-neutral-50 dark:hover:bg-gray-700 dark:text-gray-200"
+              aria-label="Next page"
+              className="rounded-2xl border px-3 py-2 text-sm shadow-sm hover:bg-neutral-50 dark:hover:bg-gray-700 dark:text-gray-200 flex items-center justify-center"
             >
-              Next ▶
+              Next <ChevronRight size={18} className="ml-1" />
             </button>
           </div>
         </div>

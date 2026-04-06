@@ -1,7 +1,8 @@
-import React, { useState, useEffect } from "react";
-import { Menu, X, Phone } from "lucide-react";
+import { useState, useEffect } from "react";
+import { Menu, X, Phone, Hash } from "lucide-react";
 import ThemeToggle from "../ThemeToggle";
 import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 
 export default function NightNavbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -17,22 +18,21 @@ export default function NightNavbar() {
 
   const menuLinks = [
     { title: "HOME", href: "/#" },
-    { title: "MENU", href: "/#menu" },
+    { title: "MENU", href: "#alino-night-menu" },
     { title: "ALINO NIGHT LIFE", href: "/alino-night" },
-    { title: "CONTACT US", href: "/#contact" },
+    { title: "CONTACT US", href: "#alino-night-contact" },
   ];
 
   const smallLinks = [
-    { title: "About Us", href: "#about" },
-    { title: "Chefs Specialities", href: "#chefs-specialities" },
-    { title: "Our Service", href: "#service" },
-    { title: "Testimonials", href: "#testimonials" },
+    { title: "About Us", href: "/#about" },
+    { title: "Chefs Specialities", href: "/#chefs-specialities" },
+    { title: "Our Service", href: "/#service" },
+    { title: "Testimonials", href: "/#testimonials" },
   ];
 
 
   return (
     <>
-      {/* ================= NAVBAR ================= */}
       <nav
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? "bg-[#090402]" : "bg-transparent"
           }`}
@@ -51,7 +51,7 @@ export default function NightNavbar() {
             <div className="flex items-center space-x-4">
               {/* Reservations Button */}
               <Link
-                to="/alino-night#contact"
+                to="#alino-night-contact"
                 className="hidden sm:block bg-[#FFB612] hover:bg-[#007A4D] text-white px-6 py-2.5 rounded-sm text-sm font-medium transition-colors"
               >
                 Reservation
@@ -83,14 +83,14 @@ export default function NightNavbar() {
               <div className="max-w-xl">
                 <div className="space-y-6 mb-10">
                   {menuLinks.map((link) => (
-                    <a
+                    <HashLink
                       key={link.title}
-                      href={link.href}
+                      to={link.href}
                       onClick={() => setIsMenuOpen(false)}
                       className="block text-white hover:text-[#FFB612] text-2xl lg:text-3xl transition-colors"
                     >
                       {link.title}
-                    </a>
+                    </HashLink>
                   ))}
                 </div>
 
@@ -98,29 +98,29 @@ export default function NightNavbar() {
 
                 <div className="space-y-4 mb-10">
                   {smallLinks.map((link) => (
-                    <a
+                    <HashLink
                       key={link.title}
-                      href={link.href}
+                      to={link.href}
                       onClick={() => setIsMenuOpen(false)}
                       className="block text-gray-400 hover:text-white transition-colors"
                     >
                       {link.title}
-                    </a>
+                    </HashLink>
                   ))}
                 </div>
 
                 {/* Mobile Reservation Button */}
-                <Link
+                <HashLink
                     to="/alino-night#contact"
-                  className="w-auto bg-[#FFB612] hover:bg-[#007A4D] text-white text-sm px-4 py-2 mb-6 rounded transition"
+                  className="w-auto bg-[#FFB612] hover:bg-[#007A4D] text-white text-sm px-4 py-2 rounded transition"
                 >
                    Reservation
-                </Link>
+                </HashLink>
 
                 {/* Contact */}
                 <a
                   href="tel:+447737098045"
-                  className="flex items-center gap-3 text-white hover:text-[#FFB612]"
+                  className="flex items-center gap-3 mt-10 text-white hover:text-[#FFB612]"
                 >
                   <Phone size={18} /> +44 7737 098045
                 </a>
@@ -149,7 +149,6 @@ export default function NightNavbar() {
               />
             </div>
           </div>
-          {/* 🔹 HIDDEN WIDGET TRIGGER (REQUIRED) */}
         </div>
       </div>
     </>

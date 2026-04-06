@@ -1,6 +1,6 @@
-// Footer.jsx
-import React from "react";
 import { FaFacebookF } from "react-icons/fa";
+import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 
 const Footer = () => {
   return (
@@ -30,36 +30,36 @@ const Footer = () => {
           </h2>
           <ul className="space-y-2">
             <li>
-              <a
-                href="#home"
+              <HashLink
+                to="/#"
                 className="transition hover:text-[#007A4D]  text-[#E5E5E5]"
               >
                 Home
-              </a>
+              </HashLink>
             </li>
             <li>
-              <a
-                href="#about"
+              <HashLink
+                to="/#about"
                 className="transition hover:text-[#007A4D] text-[#E5E5E5]"
               >
                 About
-              </a>
+              </HashLink>
             </li>
             <li>
-              <a
-                href="#menu"
+              <HashLink
+                to="/#menu"
                 className="transition hover:text-[#007A4D] text-[#E5E5E5]"
               >
                 Menu
-              </a>
+              </HashLink>
             </li>
             <li>
-              <a
-                href="#contact"
+              <HashLink
+                to="/#contact"
                 className="transition hover:text-[#007A4D] text-[#E5E5E5]"
               >
                 Contact
-              </a>
+              </HashLink>
             </li>
           </ul>
         </div>
@@ -122,13 +122,13 @@ const Footer = () => {
       {/* Bottom Text */}
       <div className="text-center text-sm space-y-2 px-6" style={{ color: "#AAAAAA" }}>
         <p>
-          <a href="/terms-conditions" className="hover:text-[#007A4D] transition">
+          <Link to="/terms-conditions" className="hover:text-[#007A4D] transition">
             Terms &amp; Conditions
-          </a>{" "}
+          </Link>{" "}
           |{" "}
-          <a href="/privacy-policy" className="hover:text-[#007A4D] transition">
+          <Link to="/privacy-policy" className="hover:text-[#007A4D] transition">
             Privacy Policy
-          </a>
+          </Link>
         </p>
         <p>
           &copy; {new Date().getFullYear()} Our Restaurant. All rights reserved. | Powered by{" "}

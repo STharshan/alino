@@ -52,10 +52,7 @@ const LiquidCaterersHero = () => {
                 className="w-full h-full object-cover"
               />
             </div>
-
-
           </div>
-
         </div>
       </div>
     </section>

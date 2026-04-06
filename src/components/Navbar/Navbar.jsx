@@ -1,6 +1,8 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { Menu, X, Phone } from "lucide-react";
 import ThemeToggle from "../ThemeToggle";
+import { HashLink } from "react-router-hash-link";
+import { openReservation } from "../../components/openReservation";
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -13,28 +15,6 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  /* Load GloriaFood Script ONCE */
-  const openReservation = () => {
-    // Load script once
-    if (!document.getElementById("glf-script")) {
-      const script = document.createElement("script");
-      script.src = "https://www.fbgcdn.com/embedder/js/ewm2.js";
-      script.async = true;
-      script.defer = true;
-      script.id = "glf-script";
-      document.body.appendChild(script);
-    }
-
-    // Trigger widget every click
-    const interval = setInterval(() => {
-      const btn = document.querySelector(".glf-button");
-      if (btn) {
-        btn.click();
-        clearInterval(interval);
-      }
-    }, 200);
-  };
-
   const menuLinks = [
     { title: "HOME", href: "/#" },
     { title: "MENU", href: "/#menu" },
@@ -43,16 +23,15 @@ export default function Navbar() {
   ];
 
   const smallLinks = [
-    { title: "About Us", href: "#about" },
-    { title: "Chefs Specialities", href: "#chefs-specialities" },
-    { title: "Our Service", href: "#service" },
-    { title: "Testimonials", href: "#testimonials" },
+    { title: "About Us", href: "/#about" },
+    { title: "Chefs Specialities", href: "/#chefs-specialities" },
+    { title: "Our Service", href: "/#service" },
+    { title: "Testimonials", href: "/#testimonials" },
   ];
 
 
   return (
     <>
-      {/* ================= NAVBAR ================= */}
       <nav
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? "bg-[#090402]" : "bg-transparent"
           }`}
@@ -60,12 +39,14 @@ export default function Navbar() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-20 lg:h-24">
             {/* Logo */}
-            <img
-              src="/logo.png"
-              alt="Alino Logo"
-              loading="lazy"
-              className="w-40 h-auto object-contain"
-            />
+            <HashLink to="/#">
+              <img
+                src="/logo.png"
+                alt="Alino Logo"
+                loading="lazy"
+                className="w-40 h-auto object-contain"
+              />
+            </HashLink>
 
             {/* Right Actions */}
             <div className="flex items-center space-x-4">
@@ -83,6 +64,8 @@ export default function Navbar() {
               <button
                 onClick={() => setIsMenuOpen(!isMenuOpen)}
                 className="text-white p-2 hover:text-[#FFB612] transition-colors z-50"
+                aria-label={isMenuOpen ? "Close menu" : "Open menu"}
+                aria-expanded={isMenuOpen}
               >
                 {isMenuOpen ? <X size={30} /> : <Menu size={30} />}
               </button>
@@ -91,7 +74,6 @@ export default function Navbar() {
         </div>
       </nav>
 
-      {/* ================= MOBILE / FULLSCREEN MENU ================= */}
       <div
         className={`fixed inset-0 bg-[#090402] z-40 transition-transform duration-500 ${isMenuOpen ? "translate-x-0" : "translate-x-full"
           }`}
@@ -103,14 +85,14 @@ export default function Navbar() {
               <div className="max-w-xl">
                 <div className="space-y-6 mb-10">
                   {menuLinks.map((link) => (
-                    <a
+                    <HashLink
                       key={link.title}
-                      href={link.href}
+                      to={link.href}
                       onClick={() => setIsMenuOpen(false)}
                       className="block text-white hover:text-[#FFB612] text-2xl lg:text-3xl transition-colors"
                     >
                       {link.title}
-                    </a>
+                    </HashLink>
                   ))}
                 </div>
 
@@ -118,14 +100,14 @@ export default function Navbar() {
 
                 <div className="space-y-4 mb-10">
                   {smallLinks.map((link) => (
-                    <a
+                    <HashLink
                       key={link.title}
-                      href={link.href}
+                      to={link.href}
                       onClick={() => setIsMenuOpen(false)}
                       className="block text-gray-400 hover:text-white transition-colors"
                     >
                       {link.title}
-                    </a>
+                    </HashLink>
                   ))}
                 </div>
 
@@ -169,7 +151,6 @@ export default function Navbar() {
               />
             </div>
           </div>
-          {/* 🔹 HIDDEN WIDGET TRIGGER (REQUIRED) */}
         </div>
       </div>
       <span

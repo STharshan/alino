@@ -1,4 +1,3 @@
-import React from "react";
 import { FaMobileScreen } from "react-icons/fa6";
 import { MdRestaurantMenu, MdLocalDining } from "react-icons/md";
 import { CiDeliveryTruck } from "react-icons/ci";
